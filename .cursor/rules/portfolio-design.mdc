@@ -1,0 +1,24 @@
+---
+description: Portfolio visual language — premium minimal clarity
+alwaysApply: true
+---
+
+# Portfolio Design
+
+Follow `docs/PRD.md` visual language. Personality: premium, minimal, modern, confident, elegant, intelligent, clean, purposeful.
+
+## Inspired by (not copied)
+
+Apple, Linear, Stripe, Figma, Notion, Vercel — clarity, typography, whitespace, refinement.
+
+## Do
+
+- Minimal palette, strong type, large whitespace, clean grids
+- Subtle, purposeful motion only
+- High-quality mockups that support the story
+
+## Don't
+
+- Overly decorative or trendy effects
+- Unnecessary glow, pill clusters, or visual noise
+- Letting UI spectacle outrank product narrative

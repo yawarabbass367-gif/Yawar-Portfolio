@@ -1,0 +1,1212 @@
+=== UNIQUE INSTANCES (count) ===
+ 114  Button
+  66  Status / Badge
+  39  Progress
+  38  Navigation / Mobile Bottom Bar
+  37  Building Blocks/status-bar
+  15  Navigation / Dashboard Header
+  13  Segmented Control
+  13  vuesax/linear/arrow-down
+   6  MobileNumberInput
+   5  PasswordInput
+   5  ConfirmPasswordInput
+   5  Status Card
+   4  FullNameInput
+   4  EmailInput
+   4  CNICInput
+   4  TermsCheckbox
+   4  CreateAccountButton
+   3  VerifyButton
+   2  Full Name Field
+   1  faysal logo
+   1  LoginButton
+   1  Alert
+   1  ContinueButton
+   1  NewPasswordInput
+   1  ResetPasswordButton
+   1  Loan Application Status
+   1  Android Top Bar
+   1  Top Bar
+   1  eye-off
+   1  vuesax/linear/arrow-right
+   1  DoneBtn
+
+=== SYMBOLS ===
+120:9118  faysal logo
+185:2506  Status Card
+103:7373  Android Top Bar
+107:2099  faysal bank logo 1
+108:1373  Dashboard Card Background
+185:2499  icon-shield
+185:2502  icon-star
+185:2498  icon-check
+
+=== TOP-LEVEL FRAMES ===
+65:43	Login	x=12025 y=4807 390x844
+117:8762	Splash	x=11595 y=4807 390x844
+65:67	Sign Up	x=12455 y=4807 390x870
+69:241	OTP Verification	x=14175 y=4807 390x844
+69:305	OTP Verification - Error State	x=14605 y=4807 390x844
+72:293	Sign Up - Validation Errors	x=12885 y=4807 390x1068
+72:583	Sign Up - Loading	x=13315 y=4807 390x930
+72:874	Sign Up - Server Error	x=13745 y=4807 390x1038
+72:1165	Account Created	x=15035 y=4807 390x844
+74:502	forgot-password	x=17981 y=4751 390x844
+74:594	recovery-otp	x=18411 y=4751 390x844
+74:662	create-new-password	x=18841 y=4751 390x900
+74:805	password-reset-success	x=19271 y=4751 390x844
+77:750	Screen-Loan-Discovery	x=-537 y=10942 390x844
+77:852	Screen-Loan-Product-Details	x=-107 y=10942 390x844
+77:1435	loan-discovery-with-active	x=26277 y=4911 390x868
+77:1548	loan-discovery-with-pending	x=26707 y=4911 390x868
+77:1649	loan-product-detail-pending	x=27137 y=4911 390x900
+77:1712	loan-product-detail-active	x=27567 y=4911 390x900
+123:9120	BackHeader	x=-732 y=14586 390x56
+93:6703	Group 1	x=22008 y=4499 1245x162
+93:6704	Group 2	x=11474 y=7972 10006x162
+177:3029	Group 1010108427	x=23533 y=7972 10006x162
+93:6707	Group 3	x=38861 y=7972 2817.929443359375x162
+94:6772	Group 4	x=44423 y=7972 2817.929443359375x162
+94:6775	Group 5	x=11626 y=12098 4196x162
+100:6837	Group 6	x=17024 y=12098 1250x162
+123:9658	Group 1010108423	x=20236 y=12098 4368x162
+157:2295	Group 1010108424	x=33978 y=12022 2922x162
+157:2296	Group 1010108425	x=17713 y=14927 2922x162
+157:2299	Group 1010108426	x=11603 y=14886 2922x162
+85:632	dashboard-ntb-empty	x=22863 y=4727 390x844
+88:908	hf-loan-discovery	x=11474 y=8258 390x844
+177:3032	hf-loan-discovery	x=23533 y=8258 390x844
+88:949	hf-product-details	x=11904 y=8258 390x844
+177:3063	hf-product-details	x=23963 y=8258 390x844
+88:956	hf-eligibility-check	x=12334 y=8258 390x844
+177:3093	hf-eligibility-check	x=24393 y=8258 390x844
+88:963	hf-eligibility-result	x=12764 y=8258 390x844
+180:4144	Group 1010108429	x=12979 y=7395 350x206
+177:3126	hf-eligibility-result	x=24823 y=8258 390x844
+88:970	hf-app-intro	x=13194 y=8258 390x844
+177:3142	hf-app-intro	x=25253 y=8258 390x844
+88:977	hf-personal-info	x=13624 y=8258 390x844
+177:3173	hf-personal-info	x=25683 y=8258 390x844
+88:984	hf-personal-details	x=14054 y=8258 390x844
+177:3207	hf-personal-details	x=26113 y=8258 390x844
+88:991	hf-residential-info	x=14484 y=8258 390x906
+177:3238	hf-residential-info	x=26543 y=8258 390x906
+88:998	hf-employment-income	x=14914 y=8258 390x844
+177:3274	hf-employment-income	x=26973 y=8258 390x844
+88:1005	hf-employment-details	x=15344 y=8258 390x844
+177:3300	hf-employment-details	x=27403 y=8258 390x844
+88:1012	hf-financial-info	x=15774 y=8258 390x844
+177:3331	hf-financial-info	x=27833 y=8258 390x844
+88:1019	hf-financing-requirement	x=16204 y=8258 390x844
+177:3363	hf-financing-requirement	x=28263 y=8258 390x844
+88:1026	hf-property-type	x=16634 y=8258 390x844
+177:3386	hf-property-type	x=28693 y=8258 390x844
+88:1033	hf-property-info	x=17064 y=8258 390x896
+177:3412	hf-property-info	x=29123 y=8258 390x896
+161:2628	hf-document-checklist	x=17481 y=8258 390x844
+177:3447	hf-document-checklist	x=29540 y=8258 390x844
+161:2692	hf-document-checklist	x=17898 y=8258 390x844
+177:3523	hf-document-checklist	x=29957 y=8258 390x844
+88:1054	hf-bank-account	x=19246 y=8258 390x844
+177:3644	hf-bank-account	x=31305 y=8258 390x844
+161:2796	hf-bank-account	x=18375 y=8258 390x844
+177:3665	hf-bank-account	x=30434 y=8258 390x844
+88:1061	hf-identity-verification	x=19676 y=8258 390x844
+177:3700	hf-identity-verification	x=31735 y=8258 390x844
+88:1068	hf-review-application	x=20106 y=8258 390x1146
+177:3716	hf-review-application	x=32165 y=8258 390x1146
+88:1075	hf-declarations	x=20536 y=8258 390x844
+177:3777	hf-declarations	x=32595 y=8258 390x844
+88:1082	hf-submit-confirmation	x=20966 y=8258 390x844
+177:3804	hf-submit-confirmation	x=33025 y=8258 390x844
+88:1089	hf-submitted	x=21396 y=8258 390x844
+177:3817	hf-submitted	x=33455 y=8258 390x844
+88:1091	hf-tracking	x=38861 y=8258 390x844
+88:1098	hf-approved	x=39291 y=8258 390x844
+88:1100	hf-loan-offer	x=39721 y=8258 390x844
+88:1107	hf-agreement	x=40151 y=8258 390x844
+88:1114	hf-disbursement	x=40581 y=8258 390x844
+88:1116	hf-active-loan-dashboard	x=41011 y=8258 390x844
+93:6607	hf-active-loan-dashboard	x=22008 y=4717 390x1183
+161:2504	hf-active-loan-dashboard	x=22420 y=4717 390x1327
+105:1672	Group 1010108422	x=1683 y=11316 350x265
+96:1252	lm-loan-details-active	x=44423 y=8258 390x1506
+96:1258	lm-repayment-schedule	x=44853 y=8258 390x1118
+96:1264	lm-schedule-expanded	x=45283 y=8258 390x1180
+96:1270	lm-loan-details-paid	x=45713 y=8258 390x1302
+96:1276	lm-loan-details-overdue	x=46143 y=8258 390x1431
+99:1303	pay-select-amount	x=11606 y=12387 390x844
+99:1309	pay-select-method	x=12036 y=12387 390x844
+99:1315	pay-select-account	x=12466 y=12387 390x844
+99:1321	pay-review	x=12896 y=12387 390x844
+99:1327	pay-authentication	x=13326 y=12387 390x844
+99:1333	pay-processing	x=13756 y=12387 390x844
+99:1336	pay-success	x=14186 y=12387 390x844
+99:1339	pay-failed	x=14616 y=12387 390x844
+99:1342	pay-pending	x=15046 y=12387 390x844
+99:1345	pay-updated-loan	x=15476 y=12387 390x1034
+102:1351	Section: Raast Branch	x=11071 y=15261 406x32
+177:2990	pay-select-method	x=17024 y=12414 390x844
+102:1401	pay-raast-details	x=17454 y=12414 390x844
+102:1442	pay-raast-review	x=17884 y=12414 390x844
+103:7255	Input	x=846 y=11060 393x354
+127:1407	payments-upcoming-single	x=20264 y=12414 390x844
+127:1519	payments-upcoming-multiple	x=20686 y=12414 390x844
+127:1688	payments-due-today	x=21108 y=12414 390x844
+127:1800	payments-overdue	x=21530 y=12414 390x844
+127:1912	payments-no-upcoming	x=21952 y=12414 390x844
+127:2012	payments-history	x=22462 y=12414 390x844
+127:2092	payments-history-filtered	x=22900 y=12414 390x844
+127:2172	payments-history-empty	x=23338 y=12414 390x844
+127:2265	payment-details	x=23776 y=12414 390x844
+127:2410	payment-flow-entry	x=24214 y=12414 390x844
+148:1828	Screen-MoreMenu	x=17713 y=15248 390x844
+148:1875	Screen-Profile	x=18151 y=15248 390x844
+148:1991	Screen-EditProfile	x=18589 y=15248 390x844
+148:2051	Screen-EditProfilePhoto	x=19027 y=15248 390x844
+148:2095	Screen-EditProfileSuccess	x=19465 y=15248 390x844
+148:2139	Screen-ChangePassword	x=19903 y=15248 390x844
+148:2207	Screen-ChangePasswordSuccess	x=20341 y=15248 390x844
+148:2267	security-biometric-off	x=11603 y=15142 390x844
+148:2318	security-biometric-setup	x=12025 y=15142 390x844
+148:2415	security-biometric-on	x=12447 y=15142 390x844
+148:2467	settings	x=12869 y=15142 390x844
+148:2522	settings-notifications	x=13291 y=15142 390x844
+148:2613	settings-language	x=13713 y=15142 390x844
+148:2713	Screen-HelpSupport	x=27288 y=12414 390x844
+148:2805	Screen-HelpCategory	x=27710 y=12414 390x844
+148:2874	Screen-HelpArticle	x=28132 y=12414 390x844
+148:2942	Screen-ContactSupport	x=28554 y=12414 390x844
+148:3014	Screen-RaiseComplaint	x=28976 y=12414 390x844
+148:3081	Screen-ComplaintSubmitted	x=29398 y=12414 390x844
+148:3113	Screen-HelpEmpty	x=29820 y=12414 390x844
+148:3263	Screen-Documents	x=33986 y=12370 412x844
+148:3372	Screen-Documents	x=34430 y=12370 412x844
+148:3470	Screen-DocumentDetails	x=34874 y=12370 412x844
+148:3573	Screen-Documents	x=35318 y=12370 412x844
+148:3634	Screen-Legal	x=35762 y=12370 412x844
+148:3699	Screen-Terms&amp;Conditions	x=36206 y=12370 412x1049
+148:3762	Screen-PrivacyPolicy	x=36650 y=12370 412x1001
+174:2418	hf-bank-account-confirmed	x=18805 y=8258 390x844
+177:3830	hf-bank-account-confirmed	x=30864 y=8258 390x844
+180:4117	Group 1010108428	x=14201 y=7090 324x224.0240936279297
+190:4331	Group 1010108431	x=45183 y=7521 350x255
+
+=== TOP-LEVEL TEXTS ===
+78:4081  Authentication Sign up/Log in
+157:2292  Help &amp; Support
+86:4709  Loan
+78:4084  Forgot Password
+
+=== ICON-LIKE NAMES ===
+  88  arrow-left
+  37  Building Blocks/status-bar
+  32  Info
+  25  Radio
+  23  Icon
+  21  check
+  20  Info Row
+  14  HomeIndicator
+  13  vuesax/linear/arrow-down
+  13  chevron-right
+  11  icons
+  11  cloud-upload
+  11  file-text
+  11  DocumentItem
+  10  Upload Placeholder
+  10  Uploaded File Card
+  10  file-icon
+  10  file-details
+  10  Info-Row
+   9  IconBox
+   9  DocRow
+   9  Checkbox
+   9  chevron-down
+   8  IconWrapper
+   6  ios-signal
+   6  ios-wifi-signal
+   6  ios-battery-full
+   6  home
+   6  shield
+   6  info
+   6  InactiveRadio
+   5  signal
+   5  wifi
+   5  battery
+   4  TermsCheckbox
+   4  hf-document-checklist
+   4  Property Title Documents
+   4  icon
+   4  Icon-Wrapper
+   3  DetailBlock
+   3  Chevron
+   3  Loan Information
+   3  LoanInfo
+   3  Start Date
+   3  eye
+   3  icon-container
+   3  fingerprint
+   3  Screen-Documents
+   3  Tab-Loan Documents
+   2  Required Documents
+   2  hf-eligibility-check
+   2  Personal information
+   2  Property information
+   2  Required documents
+   2  hf-personal-info
+   2  hf-residential-info
+   2  Employment Start Date
+   2  hf-financial-info
+   2  Home Purchase
+   2  Home Renovation
+   2  hf-property-info
+   2  Personal Information
+   2  Documents
+   2  Docs
+   2  MethodInfo
+   2  lock
+   2  Screen-EditProfile
+   2  info-card
+   2  SearchBar
+   2  search
+   1  alert-triangle
+   1  Alert
+   1  AppInfo
+   1  Document Verification
+   1  AgreementDoc
+   1  DisbursementInfo
+   1  OverdueAlert
+   1  InstallmentInfo
+   1  LockIcon
+   1  ErrorIcon
+   1  PendingIcon
+   1  03XX XXXXXXX
+   1  eye-off
+   1  vuesax/linear/arrow-right
+   1  star
+   1  Screen-Profile
+   1  Screen-EditProfilePhoto
+   1  Screen-EditProfileSuccess
+   1  security-biometric-off
+   1  security-biometric-setup
+   1  fingerprint-pattern
+   1  security-biometric-on
+   1  clock
+   1  ProfileSection
+   1  ProfileCard
+   1  bell
+   1  ActiveRadio
+   1  file
+   1  UploadArea
+   1  EmptyIconWrapper
+   1  search-x
+   1  DocumentsList
+   1  FilteredDocumentsList
+   1  Screen-DocumentDetails
+   1  DocInfoCard
+   1  LargeIconWrapper
+   1  RelatedDocsSection
+   1  IconCircle
+   1  icon-shield
+   1  icon-star
+   1  icon-check
+
+=== REPEATED FRAME PATTERNS (>=5) ===
+  91  Input
+  89  BackHeader
+  88  BackButton
+  88  arrow-left
+  71  FooterCTA
+  68  Body
+  44  Header
+  32  Info
+  25  Radio
+  23  Icon
+  21  check
+  20  Row
+  20  Info Row
+  19  MainContent
+  19  Content
+  17  Left
+  15  StatusBar
+  15  divider
+  14  HomeIndicator
+  14  Right
+  13  chevron-right
+  12  Text
+  11  icons
+  11  cloud-upload
+  11  file-text
+  11  DocumentItem
+  11  ActionBadge
+  10  HeaderSection
+  10  Footer
+  10  Todo
+  10  Upload Placeholder
+  10  Uploaded File Card
+  10  file-icon
+  10  file-details
+  10  actions
+  10  remove
+  10  trash-2
+  10  success
+  10  Info-Row
+  10  Row-Content
+   9  ProductCard
+   9  HeaderRow
+   9  IconBox
+   9  HeaderTexts
+   9  FeaturesGrid
+   9  Stat1
+   9  Stat2
+   9  MetricCol
+   9  Item
+   9  DocRow
+   9  Tenure
+   9  Consent
+   9  Checkbox
+   9  MenuItem
+   9  chevron-down
+   8  SettingRow
+   8  IconWrapper
+   8  FAQItemRow
+   8  FAQHeader
+   7  FormSection
+   7  FooterArea
+   6  FooterTextRow
+   6  ios-signal
+   6  ios-wifi-signal
+   6  ios-battery-full
+   6  ScrollBody
+   6  user
+   6  car
+   6  home
+   6  Property
+   6  Timeline
+   6  shield
+   6  info
+   6  bottom-nav-container
+   6  InactiveRadio
+   6  BodyContent
+   6  CategoryCard
+   5  signal
+   5  wifi
+   5  battery
+   5  House Finance
+   5  Nav Header
+   5  Loan Summary
+   5  Balance
+   5  Original Amount
+   5  Payment Amount
+   5  Loan
+   5  SectionHeader
+
+=== TEXT LAYER NAMES ===
+  64  ✦
+  51  PKR 25,000
+  49  Personal Loan
+  23  •
+  19  Tenure
+  19  PKR 0
+  17  House Finance
+  17  View
+  15  9:41
+  13  📄
+  11  PKR 500,000
+  10  Upload document
+  10  PDF, JPG, PNG (max 5MB)
+  10  Bank Account
+  10  Repayment Schedule
+  10  Label
+  10  Value
+   9  Max Limit
+   9  Auto Finance
+   9  PKR 5,000,000
+   8  Loan
+   8  Edit
+   8  Outstanding Balance
+   7  Security
+   7  CNIC
+   7  03XX XXXXXXX
+   7  Payment Amount
+   6  Date of Birth
+   6  Home Purchase
+   6  Property Type
+   6  Property
+   6  Loan Agreement
+   6  Monthly Installment
+   6  24 Months
+   6  15 Apr 2026
+   6  Payment Method
+   6  Amount Due
+   6  20 Aug 2026
+   5  Loan Products
+   5  Drive your dream car
+   5  Eligibility Criteria
+   5  Help &amp; Support
+   5  Full Name
+   5  ahmed.khan@email.com
+   5  Terms &amp; Conditions
+   5  Privacy Policy
+   5  ‹
+   5  Original Amount
+   5  Documents
+   5  20 August 2026
+   5  TOTAL UPCOMING
+   5  ✓
+   4  Create your account
+   4  Set up your account to manage your loans and payments digitally.
+   4  Already have an account?
+   4  Log in
+   4  0
+   4  Profit Rate
+   4  Pending
+   4  Payments
+   4  Employment Type
+   4  Monthly Income
+   4  Personal Information
+   4  Ahmed Hassan Khan
+   4  35201-XXXXXXX-X
+   4  Gender
+   4  Enter name
+   4  Salaried
+   4  Employment Details
+   4  PKR 250,000
+   4  Purpose
+   4  House / Villa
+   4  Lahore
+   4  PKR 8,000,000
+   4  Document Checklist
+   4  Upload Your Documents
+   4  Please upload the required documents to proceed with your application.
+   4  Identity
+   4  CNIC (Front &amp; Back)
+   4  Identity document
+   4  Income
+   4  Latest Salary Slip
+   4  Last 3 months
+   4  Bank Statement
+   4  Last 6 months
+   4  Sale Agreement
+   4  Property documents
+   4  Property Title Documents
+   4  Property ownership
+   4  HF-2024-00847
+   4  Monthly Payment
+   4  Indicative
+   4  Contact Support
+   4  PKR 450,000
+   4  Amount Paid
+   4  Remaining Tenure
+   4  Repayment Progress
+   4  of PKR 500,000
+   4  Due: 15 Sep 2026
+   4  Paying:
+   4  Payment Date
+   3  We&#39;ve sent a 6-digit verification code to:
+   3  0300 •••• 4521
+   3  4
+   3  8
+   3  2
+   3  7
+   3  Didn&#39;t receive the code?
+   3  Change mobile number
+   3  FAYSAL BANK
+   3  5
+   3  Find the right financing
+   3  Finance your personal needs
+   3  PKR 3,000,000
+   3  12 - 60 Months
+   3  PKR 10,000,000
+   3  12 - 84 Months
+   3  Own your dream home
+   3  PKR 50,000,000
+   3  3 - 25 Years
+   3  Max Amount
+   3  Benefits &amp; Features
+   3  Documents Required
+   3  Fees &amp; Charges
+   3  Mobile Number
+   3  Email Address
+   3  Other
+   3  •••• •••• •••• 4521
+   3  Mobile
+   3  15 Years
+   3  Application ID
+   3  Next Due Date
+   3  Sep 20, 2024
+   3  Tenure Remaining
+   3  14 Yrs 11 Mo
+   3  Recent Payments
+   3  PKR 50,000
+   3  18 Months
+   3  Next Payment
+   3  Loan Information
+   3  Loan Type
+   3  Loan Amount
+   3  Start Date
+   3  15 April 2026
+   3  15 March 2028
+   3  View →
+   3  Key Facts Statement
+   3  15 Sep 2026
+   3  Raast
+   3  PKR 425,000
+   3  Reference
+   3  Status
+   3  Upcoming Payments
+   3  Ahmed Khan
+   3  35201-1234567-1
+   3  ••••••••
+   3  Fingerprint
+   3  Face ID
+   3  Account
+   3  All
+   3  Loan Documents
+   3  Receipts
+   3  Loan Offer Letter
+   2  Verify your mobile number
+   2  |
+   2  Resend code in 00:30
+   2  1
+   2  9
+   2  3
+   2  At least 8 characters
+   2  PKR 3M
+   2  12-60 Mo.
+   2  21% p.a.
+   2  Simple digital application workflow
+   2  Flexible customized repayment structures
+   2  Completely transparent processing charges
+   2  Age 21-60 • PKR 25k Min
+   2  CNIC • Bank Statement
+   2  1% processing fee
+   2  Explore premium financial solutions structured precisely around your plans.
+   2  Documents and legal flows
+   2  Explore Loans
+   2  Find financing that fits your needs.
+   2  Flexible financing for personal needs
+   2  Own your home with Shariah-compliant financing
+   2  Shariah-compliant home financing to help you own your dream home.
+   2  Key Features
+   2  Financing up to PKR 50,000,000*
+   2  Tenure up to 25 years*
+   2  Competitive profit rates*
+   2  No early settlement penalty*
+   2  Required Documents
+   2  CNIC, Salary Slips, Bank Statements, Property Documents
+   2  *Terms and conditions apply. Actual rates and limits subject to bank approval.
+   2  Check Your Eligibility
+   2  Answer a few questions to see if you may be eligible for House Finance.
+   2  DD / MM / YYYY
+   2  Select employment type
+   2  Existing Monthly Obligations
+   2  Include existing loan EMIs, rent, etc.
+   2  Desired Financing Amount
+   2  Eligibility Result
+   2  App Intro
+   2  House Finance Application
+   2  You&#39;ll need information about yourself, your income, and the property you want to finance.
+   2  ⏱ Estimated time: 15–20 minutes
+   2  Application Sections
+   2  Personal information
+   2  Income &amp; employment
+   2  Property information
+   2  Required documents
+   2  Review &amp; submission
+   2  Personal Info
+   2  Some information has been prefilled from your account.
+   2  Verified during signup
+   2  15 / 03 / 1990
+   2  Personal Details
+   2  Additional Details
+   2  Select gender
+   2  Marital Status
+   2  Select marital status
+   2  Father&#39;s / Spouse&#39;s Name
+   2  Nationality
+   2  Pakistani
+   2  Number of Dependents
+   2  Residential Info
+   2  Residential Information
+   2  Current Address *
+   2  Enter your address
+   2  City *
+   2  Select city
+   2  Province
+   2  Select province
+   2  Postal Code
+   2  e.g. 54000
+   2  Residence Type
+   2  Select type
+   2  Owned, Rented, Family, etc.
+   2  Duration at Current Residence
+   2  Select duration
+   2  Employment Income
+   2  How do you earn your income?
+   2  Select your primary source of income.
+   2  Self-Employed
+   2  Business Owner
+   2  Employer Name *
+   2  Enter employer name
+   2  Job Title / Designation
+   2  Enter job title
+   2  Employment Start Date
+   2  MM / YYYY
+   2  Monthly Gross Income *
+   2  Monthly Net Income *
+   2  Financial Info
+   2  Financial Information
+   2  Monthly Net Income
+   2  Monthly Household Expenses
+   2  Existing Loan Obligations
+   2  Total monthly EMIs for other loans
+   2  Monthly Rent
+   2  Estimated Available Income
+   2  PKR 180,000
+   2  Financing Requirement
+   2  Tell us about your financing needs
+   2  Financing Amount *
+   2  Desired Tenure
+   2  What would you like to finance?
+   2  Select the type of property financing you need.
+   2  Construction
+   2  Home Renovation
+   2  Balance Transfer
+   2  Property Info
+   2  Property Information
+   2  Property Address *
+   2  Enter property address
+   2  City
+   2  Property Value *
+   2  Property Size (sq ft)
+   2  e.g. 2000
+   2  Seller / Developer Name
+   2  CNIC_front_back.pdf
+   2  2.4 MB
+   2  salary_slip_aug2024.pdf
+   2  1.1 MB
+   2  bank_statement_6months.pdf
+   2  3.2 MB
+   2  sale_agreement.pdf
+   2  1.8 MB
+   2  property_title.pdf
+   2  2.7 MB
+   2  Select or add the account for loan disbursement.
+   2  Faysal Bank Current Account
+   2  Add Bank Account
+   2  Enter your bank details where the loan amount will be disbursed.
+   2  Bank Name
+   2  Select your bank
+   2  Account Title
+   2  Enter account holder name
+   2  Account Number / IBAN
+   2  Enter IBAN or account number
+   2  Branch Name
+   2  Enter branch name
+   2  Branch Code
+   2  Enter branch code
+   2  Identity Verification
+   2  Review Application
+   2  Review Your Application
+   2  Employment &amp; Income
+   2  Employer
+   2  ABC Corporation
+   2  Financing Amount
+   2  Location
+   2  Property Value
+   2  Declarations
+   2  Declarations &amp; Consent
+   2  I confirm that all information provided is accurate and complete to the best of my knowledge.
+   2  I authorize Faysal Bank to verify the information provided, including credit bureau checks.
+   2  I have read and agree to the Terms &amp; Conditions and Privacy Policy.
+   2  I consent to electronic communication regarding this application.
+   2  Product Disclosure
+   2  Submit Confirmation
+   2  Ready to submit your application?
+   2  Once submitted, your application will be reviewed by Faysal Bank. You may not be able to change certain information after submission.
+   2  Application Submitted!
+   2  Your House Finance application has been received. We&#39;ll review it and get back to you shortly.
+   2  No payments yet
+   2  Your first payment is due on Sep 20, 2024.
+   2  Application under review.
+   2  Submitted:
+   2  10 Aug 2026
+   2  Your application was not approved.
+   2  Pending Applications
+   2  EMI Payment
+   2  PKR 50,000 paid
+   2  Maturity Date
+   2  24 installments
+   2  Total
+   2  Installment 04
+   2  15 Jul 2026
+   2  Installment 05
+   2  15 Aug 2026
+   2  Installment 06
+   2  Installment 07
+   2  15 Oct 2026
+   2  Installment 08
+   2  15 Nov 2026
+   2  PKR XX,XXX
+   2  Choose Payment Method
+   2  Pay securely using Raast
+   2  Pay from your Faysal Bank account
+   2  Select Account
+   2  Available:
+   2  Review Payment
+   2  Confirm the details of your payment.
+   2  •••• 4521
+   2  Payment Fee
+   2  Total Debit
+   2  Outstanding After Payment
+   2  Payment Successful
+   2  Faysal Bank
+   2  PAY-2026-XXXXXX
+   2  PKR 75,000
+   2  1 upcoming payment
+   2  Settings
+   2  Log Out
+   2  Profile
+   2  📷
+   2  15 March 1990
+   2  Male
+   2  +92 300 1234567
+   2  Edit Profile
+   2  Change Photo
+   2  🔒
+   2  Biometric Login
+   2  Add an extra layer of security and speed up your sign-in experience.
+   2  Use your device&#39;s fingerprint sensor for quick access.
+   2  Enable facial recognition for secure authentication.
+   2  Security Tips
+   2  Biometric data is stored securely on your device and never shared with the bank.
+   2  You can still use your password if biometric authentication fails.
+   2  You can change these settings at any time.
+   2  Enabled
+   2  Language
+   2  Call Us
+   2  021-111-329-725
+   2  Email Us
+   2  support@faysalbank.com
+   2  How do I make a loan payment?
+   2  Why is my payment pending?
+   2  What payment methods are accepted?
+   2  Last updated: 1 January 2026
+   2  Last Updated: 1 January 2026
+   2  Faysal Bank Limited. All rights reserved.
+   2  Tab-Label
+   2  Step-Label
+   2  Heading
+   2  Subheading
+   2  Card-Section-Title
+   2  Badge-Label
+   2  Edit-Link-Text
+   1  Welcome back
+   1  Log in to manage your loans, payments, and account.
+   1  Forgot Password?
+   1  Don&#39;t have an account?
+   1  Create an account
+   1  Incorrect code. Please try again.
+   1  Resend Code
+   1  Account Created Successfully
+   1  Your account is ready. You can now explore your loan options and apply for financing.
+   1  Forgot your password?
+   1  Enter the mobile number associated with your account and we&#39;ll send you a verification code.
+   1  Remembered password?
+   1  Back to Login
+   1  Verify your identity
+   1  Create a new password
+   1  Choose a strong password to keep your account secure.
+   1  Password must contain:
+   1  Upper and lowercase letters
+   1  At least 1 number
+   1  At least 1 special character
+   1  Password Updated Successfully
+   1  Your password has been changed. You can now log in with your new password.
+   1  Explore premium financial solutions structured precisely around your commercial or personal plans.
+   1  Finance your personal milestones with a quick, secure digital pathway.
+   1  Active
+   1  View Application
+   1  Drive your dream car with flexible financing options.
+   1  PKR 10M
+   1  12-84 Mo.
+   1  From 18% p.a.
+   1  Quick &amp; completely digitized approval
+   1  Choice of both new and used vehicles
+   1  Highly competitive profit rates
+   1  Age 21-65 • Salaried &amp; SE
+   1  CNIC • Income Proof • Bank statement
+   1  Standard processing fee applies
+   1  Your application is currently being reviewed.
+   1  Application Pending
+   1  Finance your personal needs with a simple digital application.
+   1  Authentication Sign up/Log in
+   1  Dashboard
+   1  New To Bank Customer /Personal Loan
+   1  Existing Customer /Auto Loan
+   1  Application Status After applying for loan
+   1  Loan Management + Active Loan + Repayment schedule
+   1  Loan Repayment via saved account
+   1  Loan Repayment via raast account
+   1  Forgot Password
+   1  Welcome to Faysal Bank
+   1  Explore financing options designed around your needs.
+   1  Available Products
+   1  Flexible financing for your needs
+   1  Drive your dream car today
+   1  Own your home with ease
+   1  You&#39;re eligible to continue
+   1  Based on your information, you can proceed with your House Finance application. This is not a guarantee of approval.
+   1  Tracking
+   1  Application Status
+   1  Application Submitted
+   1  Received on Aug 15, 2024
+   1  Document Verification
+   1  In progress
+   1  Credit Assessment
+   1  Property Valuation
+   1  Final Approval
+   1  Estimated processing time: 5–7 working days. We&#39;ll notify you of any updates.
+   1  Congratulations!
+   1  Your House Finance application has been approved. Review your loan offer details.
+   1  Loan Offer
+   1  Your Loan Offer
+   1  Approved Amount
+   1  Financing Type
+   1  Diminishing Musharakah
+   1  Processing Fee
+   1  As per schedule
+   1  The final rate and payment schedule will be confirmed in your loan agreement. Rates are subject to change.
+   1  Agreement
+   1  Please review and sign the financing agreement to proceed.
+   1  House Finance Agreement
+   1  This agreement is entered into between Faysal Bank Limited and the applicant for the purpose of House Finance under Diminishing Musharakah...
+   1  Scroll to read full agreement
+   1  I have read, understood and agree to the terms of this financing agreement.
+   1  Loan Disbursed!
+   1  Your House Finance has been disbursed to your account ending •••• 4521.
+   1  Amount Disbursed
+   1  Disbursement Date
+   1  Aug 20, 2024
+   1  My Loans
+   1  Quick Actions
+   1  Payment Schedule
+   1  Account Statement
+   1  Aug 15, 2024
+   1  Jul 15, 2024
+   1  Jun 15, 2024
+   1  May 15, 2024
+   1  Due: 15 September 2026
+   1  As per agreement
+   1  24
+   1  Paid
+   1  19
+   1  Remaining
+   1  Due Date
+   1  Installment 01
+   1  Installment 02
+   1  15 May 2026
+   1  Installment 03
+   1  15 Jun 2026
+   1  Show all 24 installments
+   1  Payment Breakdown
+   1  Principal
+   1  Profit / Interest
+   1  Fees
+   1  PKR X,XXX
+   1  Installment 09
+   1  15 Dec 2026
+   1  Total Paid
+   1  PKR 500,000 paid
+   1  Completion Date
+   1  Clearance Certificate
+   1  Payment Overdue
+   1  Your payment of PKR 25,000 was due on 15 August 2026. Please make a payment as soon as possible to avoid additional charges.
+   1  Overdue Payment
+   1  Was due: 15 August 2026
+   1  Make a Payment
+   1  Outstanding Balance:
+   1  How much would you like to pay?
+   1  PKR
+   1  25,000
+   1  Next installment
+   1  Payment Options
+   1  Pay Next Installment
+   1  Enter Custom Amount
+   1  Enter a different amount
+   1  Savings Account
+   1  PKR 85,000
+   1  Current Account
+   1  •••• •••• •••• 8834
+   1  PKR 230,000
+   1  Faysal Bank Account
+   1  Confirm Payment
+   1  Confirm Your Payment
+   1  Enter your MPIN to authorize the payment of PKR 25,000 for your Personal Loan.
+   1  6
+   1  ⌫
+   1  Processing Your Payment
+   1  Please wait while we process your payment of PKR 25,000 for your Personal Loan.
+   1  Please do not close this screen.
+   1  Your payment has been successfully processed.
+   1  Payment Could Not Be Completed
+   1  We couldn&#39;t process your payment. Your account has not been debited. Please try again or choose a different payment method.
+   1  Payment Is Being Processed
+   1  Your payment is still being processed. We&#39;ll update your loan once the payment is confirmed.
+   1  Payment of PKR 25,000 received successfully.
+   1  17 Months
+   1  PKR 75,000 paid
+   1  Due: 15 October 2026
+   1  6 of 24 paid
+   1  RAAST PAYMENT BRANCH (alternate path from Payment Method)
+   1  Raast Payment
+   1  Enter Raast ID
+   1  Enter your Raast ID linked to your bank account to make the payment.
+   1  Raast ID
+   1  Or select a linked Raast ID
+   1  Log In to your Account
+   1  Forgot Your Password ?
+   1  PKR 200,000
+   1  3 upcoming payments
+   1  Due: 20 Sep 2026
+   1  Due: 25 Sep 2026
+   1  PKR 100,000
+   1  Due today
+   1  Due Payments
+   1  Due: Today (15 Sep)
+   1  Overdue
+   1  Overdue Payments
+   1  Was due: 15 Aug 2026
+   1  NEXT SCHEDULED PAYMENT
+   1  15 October 2026
+   1  Past Payments
+   1  Past Payments (Personal Loan)
+   1  Payment Details
+   1  Processed on 20 Aug 2026 at 10:32 AM
+   1  Payment Status
+   1  Faysal Bank Account ···· 4521
+   1  PAY-2026-082001
+   1  More
+   1  My Profile
+   1  About Us
+   1  Rate the App
+   1  PERSONAL INFORMATION
+   1  CONTACT INFORMATION
+   1  Email
+   1  Change Profile Photo
+   1  Take Photo
+   1  🖼️
+   1  Choose from Gallery
+   1  🗑️
+   1  Remove Photo
+   1  Profile Updated
+   1  Your profile information has been updated successfully.
+   1  Change Password
+   1  Current Password
+   1  New Password
+   1  Confirm New Password
+   1  One uppercase letter
+   1  One lowercase letter
+   1  One number
+   1  One special character
+   1  Password Changed
+   1  Your password has been updated successfully.
+   1  Verify Your Identity
+   1  Place your finger on the sensor to enable biometric login
+   1  Biometric login is enabled. You can sign in using your fingerprint or face.
+   1  Active Biometrics
+   1  Disable Biometric Login
+   1  Disable
+   1  Last verified: Today, 10:42 AM
+   1  JD
+   1  John Doe
+   1  john.doe@example.com
+   1  Notifications
+   1  Communication
+   1  Privacy
+   1  About
+   1  Notification Preferences
+   1  Payment Notifications
+   1  Payment Reminders
+   1  Get notified before your bills are due.
+   1  Successful Transactions
+   1  Alerts for completed payments and transfers.
+   1  Loan Updates
+   1  Loan Disbursal
+   1  Updates when your loan is approved and disbursed.
+   1  EMI Due Dates
+   1  Reminders for upcoming loan repayments.
+   1  Security Alerts
+   1  Critical alerts for login attempts and password changes.
+   1  Transaction Alerts
+   1  Instant notifications for large or suspicious transactions.
+   1  Marketing
+   1  Promotional Offers
+   1  Exclusive deals and personalized banking offers.
+   1  App Updates
+   1  Stay informed about new features and security patches.
+   1  Select App Language
+   1  English
+   1  Standard system language
+   1  اردو (Urdu)
+   1  Local language alternative
+   1  हिन्दी (Hindi)
+   1  Official language of India
+   1  العربية (Arabic)
+   1  Middle East and North Africa
+   1  Español (Spanish)
+   1  Latin America and Spain
+   1  Français (French)
+   1  Europe and Africa
+   1  中文 (Chinese)
+   1  Simplified characters
+   1  How can we help?
+   1  Browse by Category
+   1  Loans
+   1  Applications
+   1  Why did my payment fail?
+   1  How can I view my payment history?
+   1  How do I set up autopay?
+   1  Help
+   1  To make your payment seamlessly within the app, follow these step-by-step instructions:
+   1  1. Go to the Payments tab from the bottom navigation.
+   1  2. Select the specific active loan you want to pay.
+   1  3. Choose your payment amount — next installment or custom amount.
+   1  4. Select your preferred payment method (Bank Account or Raast).
+   1  5. Review all your details carefully and confirm payment.
+   1  Related Articles
+   1  Still need help?
+   1  Available Mon-Sat, 9 AM - 6 PM
+   1  Call Now
+   1  We typically respond within 24 hours
+   1  Send Email
+   1  Live Chat
+   1  Start Live Chat Session
+   1  Chat directly with our digital support experts
+   1  Start Chat
+   1  Raise a Complaint
+   1  Category
+   1  Subject
+   1  Loan payment deduction issue
+   1  Description
+   1  The amount of PKR 25,000 was deducted twice from my account for the current month&#39;s installment. Please reverse the transaction as soon as possible.
+   1  Attach File (Optional)
+   1  Upload PDF, PNG, or JPG
+   1  Max file size: 5 MB
+   1  Submit Complaint
+   1  Complaint Submitted
+   1  Your complaint has been submitted successfully.
+   1  Reference Number
+   1  CASE-2026-08001
+   1  We will review your details and respond within 48 hours.
+   1  xyz123
+   1  No Results Found
+   1  We couldn&#39;t find any help articles matching your search. Try different keywords or browse categories.
+   1  Browse Categories
+   1  Payment Receipt
+   1  Document Details
+   1  Created
+   1  File Size
+   1  245 KB
+   1  Download
+   1  Related Documents
+   1  No Documents Yet
+   1  Your documents will appear here when they become available. Documents are generated after loan approval.
+   1  View Loans
+   1  Legal
+   1  Data Protection Notice
+   1  How we protect your data
+   1  1. Introduction
+   1  Welcome to Faysal Bank&#39;s Digital Lending Platform. By accessing or using our loan services, you agree to comply with and be bound by the following terms and conditions of use. Please read these terms carefully before applying.
+   1  2. Account Usage
+   1  Your login credentials and account access details are confidential. You are solely responsible for all activities and transactions performed under your registered account. Faysal Bank will not be liable for unauthorized access resulting from user negligence.
+   1  3. Loan Services
+   1  Loan disbursements, processing times, and eligibility are subject to credit assessments, documentation verification, and internal Faysal Bank approval policies. Submission of an application does not guarantee loan approval.
+   1  4. Payment Terms
+   1  Repayments must be processed according to the approved schedule. Late payments may attract penal charges as detailed in your Key Facts Statement and may adversely affect your credit rating with state repositories.
+   1  1. Information We Collect
+   1  We collect personal, financial, and employment information required to assess loan applications and verify identity. This includes CNIC scans, biometrics, bank statements, and tax declarations submitted during the process.
+   1  2. How We Use Your Information
+   1  Your collected data is primarily used to determine creditworthiness, execute legally binding loan agreements, manage loan repayments, facilitate customer support, and meet regulatory compliance mandates.
+   1  3. Data Security
+   1  We apply industry-standard encryption, firewalls, and server access protocols to prevent unauthorized access, alteration, disclosure, or destruction of your sensitive financial and personal data.
+   1  4. Your Rights
+   1  Under applicable state financial regulations, you retain the right to query the data stored under your account, request corrections to erroneous records, and receive clear summaries of accumulated repayment tracking.
+
+=== PATH-LIKE INSTANCE NAMES ===
+  66  Status / Badge
+  38  Navigation / Mobile Bottom Bar
+  37  Building Blocks/status-bar
+  15  Navigation / Dashboard Header
+  13  vuesax/linear/arrow-down
+   1  vuesax/linear/arrow-right
+
+=== BUTTON INSTANCE SIZES ===
+  60  350x48
+  10  350x40
+   8  310x32
+   7  302x48
+   6  100x32
+   4  342x48
+   3  302x40
+   3  97x32
+   3  350x32
+   2  308x48
+   2  200x32
+   1  310x48
+   1  367x56
+   1  160x32
+   1  110x32
+   1  130x32
+   1  372x32
+
+=== FOOTER / HEADER / NAV FRAME NAMES ===
+  89  BackHeader
+  71  FooterCTA
+  44  Header
+  15  StatusBar
+  10  HeaderSection
+  10  Footer
+   9  HeaderRow
+   9  HeaderTexts
+   8  FAQHeader
+   7  FooterArea
+   6  FooterTextRow
+   6  bottom-nav-container
+   5  Nav Header
+   5  SectionHeader
+   3  CTASection
+   3  StickyCTA
+   3  ChannelHeader
+   3  FilterTabs
+   3  Tab-All
+   3  Tab-Loan Documents
+   3  Tab-Receipts
+   2  Loan Header
+   2  FooterMeta
+   2  Active-Tab
+   2  Card-Header
+   1  CTA
+   1  header
+   1  modal-overlay
+   1  BottomAction
+
+=== FORM-RELATED INSTANCES ===
+ 114  Button
+  66  Status / Badge
+  39  Progress
+   6  MobileNumberInput
+   5  PasswordInput
+   5  ConfirmPasswordInput
+   4  FullNameInput
+   4  EmailInput
+   4  CNICInput
+   4  TermsCheckbox
+   4  CreateAccountButton
+   3  VerifyButton
+   1  LoginButton
+   1  Alert
+   1  ContinueButton
+   1  NewPasswordInput
+   1  ResetPasswordButton

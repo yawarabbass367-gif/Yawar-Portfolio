@@ -1,0 +1,1901 @@
+/* Medico case study */
+.medico-case {
+  --medico-blue: #1a6dff;
+  --medico-blue-deep: #0d4fd6;
+  --medico-blue-soft: #e8f1ff;
+  --medico-blue-mist: #f3f7ff;
+  --medico-orange: #ff8a3d;
+  --medico-ink: #0f172a;
+  --medico-muted: #64748b;
+  --medico-line: #e2e8f0;
+  --medico-board: 1120px;
+  --medico-gutter: clamp(1.25rem, 4vw, 2rem);
+  color: var(--medico-ink);
+  background: #fff;
+}
+
+.medico-case img {
+  max-width: 100%;
+  height: auto;
+}
+
+.medico-board {
+  width: min(var(--medico-board), calc(100% - (var(--medico-gutter) * 2)));
+  margin-inline: auto;
+}
+
+.medico-section {
+  padding: clamp(3rem, 7vw, 5.5rem) 0;
+}
+
+.medico-kicker {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--medico-muted);
+}
+
+.medico-h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--medico-blue);
+  line-height: 1.1;
+}
+
+.medico-h2--on-blue {
+  color: #fff;
+}
+
+.medico-lead,
+.medico-body {
+  margin: 0;
+  max-width: 40rem;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.65;
+  color: var(--medico-muted);
+}
+
+.medico-body--tight {
+  margin-top: 1.25rem;
+  color: var(--medico-ink);
+}
+
+.medico-headline {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--medico-ink);
+}
+
+.medico-display {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--medico-ink);
+}
+
+.medico-display--sm {
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+}
+
+.medico-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.medico-split--flip {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.medico-phone {
+  display: block;
+  width: min(280px, 100%);
+  height: auto;
+  margin-inline: auto;
+  filter: drop-shadow(0 24px 48px rgba(15, 23, 42, 0.18));
+}
+
+.medico-phone--solo {
+  width: min(300px, 70%);
+}
+
+.medico-hero {
+  padding: clamp(1.75rem, 4vw, 2.75rem) 0 clamp(2rem, 4vw, 3rem);
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 42%, #dceaff 0%, transparent 68%),
+    #fff;
+  overflow: clip;
+}
+
+.medico-hero__inner {
+  text-align: center;
+}
+
+.medico-hero__brand-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.medico-hero__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.medico-hero__name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--medico-ink);
+}
+
+.medico-hero__badge {
+  display: inline-block;
+  margin: 0;
+  padding: 0.32rem 0.8rem;
+  border-radius: 999px;
+  background: var(--medico-blue-soft);
+  color: var(--medico-blue-deep);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.medico-hero__title {
+  margin: 0 auto 1.35rem;
+  max-width: 11em;
+  font-size: clamp(2rem, 4.8vw, 3.35rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+  color: var(--medico-ink);
+}
+
+.medico-hero__title span {
+  color: var(--medico-blue);
+}
+
+.medico-hero__stage {
+  width: min(1024px, 100%);
+  margin-inline: auto;
+  padding-top: clamp(0.5rem, 2vw, 1.25rem);
+}
+
+.medico-case .medico-hero__composition {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+
+.medico-thanks__mark {
+  display: inline-grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin-inline: auto;
+}
+
+.medico-showcase-band {
+  padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2rem);
+  background-color: var(--medico-blue);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: clip;
+}
+
+.medico-showcase-band__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: min(1100px, 100%);
+  margin-inline: auto;
+}
+
+.medico-case .medico-showcase-band__phones {
+  display: block;
+  width: min(1100px, 100%);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.medico-bg-problems {
+  position: relative;
+  overflow: clip;
+  --medico-bg-photo-set-w: min(480px, 46vw);
+  --medico-bg-photo-pair-w: min(300px, 26vw);
+  --medico-bg-phone-w: min(300px, 25vw);
+  --medico-bg-right-w: max(var(--medico-bg-photo-pair-w), var(--medico-bg-phone-w));
+}
+
+.medico-bg-problems__background {
+  position: relative;
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(3.5rem, 8vw, 6rem);
+  background: #fff;
+}
+
+.medico-bg-problems__background-inner {
+  position: relative;
+  padding-right: calc(var(--medico-bg-right-w) + clamp(1.5rem, 3vw, 2.5rem));
+}
+
+.medico-bg-problems__right {
+  position: absolute;
+  top: clamp(2.5rem, 6vw, 4.5rem);
+  bottom: 0;
+  right: max(var(--medico-gutter), calc((100% - var(--medico-board)) / 2 + var(--medico-gutter)));
+  z-index: 4;
+  width: var(--medico-bg-right-w);
+  pointer-events: none;
+}
+
+.medico-bg-problems__text {
+  max-width: 36rem;
+  margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.medico-case .medico-bg-problems__photos-trio {
+  display: block;
+  width: var(--medico-bg-photo-set-w);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.medico-case .medico-bg-problems__photos-pair {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: var(--medico-bg-photo-pair-w);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: translateX(-50%);
+}
+
+.medico-bg-problems__right .medico-bg-problems__phone {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: var(--medico-bg-phone-w);
+  height: auto;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 24px 40px rgba(15, 23, 42, 0.22));
+}
+
+.medico-bg-problems__problems-inner {
+  padding-right: calc(var(--medico-bg-right-w) + clamp(1.5rem, 3vw, 2.5rem));
+}
+
+.medico-bg-problems__problems {
+  padding: clamp(5rem, 12vw, 8rem) 0 clamp(3rem, 7vw, 5rem);
+  background-color: var(--medico-blue);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.medico-photo-stack {
+  position: relative;
+  min-height: 280px;
+}
+
+.medico-photo {
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.medico-photo--a {
+  width: min(100%, 420px);
+  height: auto;
+  transform: rotate(-3deg);
+}
+
+.medico-photo--b {
+  position: absolute;
+  right: 0;
+  bottom: -8%;
+  width: min(55%, 240px);
+  height: auto;
+  transform: rotate(4deg);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.16);
+}
+
+.medico-problem {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  background: var(--medico-blue);
+  color: #fff;
+}
+
+.medico-problem__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.medico-problem__headline {
+  margin: 0 0 1rem;
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.medico-problem__body,
+.medico-problem__q {
+  margin: 0;
+  max-width: 36rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.medico-problem__q {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.medico-problem .medico-phone {
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.28));
+}
+
+.medico-solution__intro {
+  max-width: 42rem;
+  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+}
+
+.medico-solution__title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--medico-ink);
+}
+
+.medico-solution__headline {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--medico-ink);
+}
+
+.medico-solution__lede {
+  margin: 0;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--medico-muted);
+}
+
+.medico-solution__row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.medico-solution__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.medico-case .medico-solution__phone-arc {
+  display: block;
+  width: min(420px, 100%);
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.medico-solution__aside {
+  max-width: 28rem;
+}
+
+.medico-solution__aside-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.25rem, 2.4vw, 1.7rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--medico-blue);
+}
+
+.medico-solution__aside-body {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--medico-muted);
+}
+
+.medico-callout {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 1rem;
+  background: var(--medico-blue-mist);
+  border: 1px solid var(--medico-blue-soft);
+}
+
+.medico-callout h3 {
+  margin: 0 0 0.4rem;
+  color: var(--medico-blue);
+  font-size: 1.05rem;
+}
+
+.medico-callout p {
+  margin: 0;
+  color: var(--medico-muted);
+  line-height: 1.55;
+}
+
+.medico-highlights {
+  position: relative;
+  overflow: clip;
+  padding: clamp(3rem, 7vw, 5.5rem) 0 clamp(8rem, 16vw, 14rem);
+  background: #fff;
+  color: var(--medico-ink);
+}
+
+.medico-highlights__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.medico-highlights__title {
+  margin: 0 0 clamp(2.75rem, 6vw, 4.25rem);
+  text-align: center;
+  font-size: clamp(1.85rem, 3.8vw, 2.85rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--medico-blue);
+}
+
+.medico-highlights__meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(2.5rem, 6vw, 5rem);
+  margin-bottom: clamp(3.25rem, 7vw, 5rem);
+  max-width: min(52rem, 100%);
+  text-align: left;
+}
+
+.medico-highlights__meta-label {
+  margin: 0 0 0.55rem;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--medico-ink);
+}
+
+.medico-highlights__meta-value {
+  margin: 0;
+  font-size: clamp(0.92rem, 1.35vw, 1.02rem);
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--medico-muted);
+}
+
+.medico-highlights__process {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(0.65rem, 1.6vw, 1.15rem);
+  max-width: 56rem;
+  position: relative;
+  z-index: 1;
+}
+
+.medico-highlights__phase-title {
+  margin: 0 0 0.55rem;
+  font-size: clamp(0.78rem, 1.25vw, 0.92rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--medico-blue);
+}
+
+.medico-highlights__phase-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.medico-highlights__phase-list li {
+  position: relative;
+  padding-left: 0.9rem;
+  font-size: clamp(0.8rem, 1.15vw, 0.92rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--medico-ink);
+}
+
+.medico-highlights__phase-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.52em;
+  width: 0.34rem;
+  height: 0.34rem;
+  border-radius: 50%;
+  background: var(--medico-blue);
+}
+
+.medico-case .medico-highlights__road {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: min(720px, 58vw);
+  max-width: none;
+  height: auto;
+  pointer-events: none;
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+.medico-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.medico-meta-card {
+  padding: 1.25rem 1.35rem;
+  border-radius: 1rem;
+  background: var(--medico-blue-mist);
+  border: 1px solid var(--medico-line);
+}
+
+.medico-meta-card__label {
+  margin: 0 0 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--medico-muted);
+}
+
+.medico-meta-card__value {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.medico-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.medico-chip-row li {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  background: var(--medico-blue-soft);
+  color: var(--medico-blue-deep);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.medico-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.medico-chart-card {
+  padding: 1.25rem;
+  border-radius: 1.15rem;
+  border: 1px solid var(--medico-line);
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.medico-chart-card h3 {
+  margin: 1rem 0 0.65rem;
+  font-size: 1rem;
+}
+
+.medico-chart-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.medico-chart-card li {
+  display: flex;
+  gap: 0.45rem;
+  align-items: flex-start;
+  font-size: 0.86rem;
+  color: var(--medico-muted);
+  line-height: 1.4;
+}
+
+.medico-pie {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+}
+
+.medico-pie__hole {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.medico-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  margin-top: 0.3rem;
+  flex: 0 0 auto;
+}
+
+.medico-dot--blue {
+  background: var(--medico-blue);
+}
+
+.medico-dot--orange {
+  background: var(--medico-orange);
+}
+
+.medico-insights-band {
+  padding: clamp(2.5rem, 5vw, 3.75rem) 0;
+  background-color: #fff;
+  background-image:
+    repeating-linear-gradient(
+      to right,
+      var(--medico-blue) 0 10px,
+      transparent 10px 20px
+    ),
+    repeating-linear-gradient(
+      to right,
+      var(--medico-blue) 0 10px,
+      transparent 10px 20px
+    );
+  background-size: 100% 2px, 100% 2px;
+  background-position: top left, bottom left;
+  background-repeat: repeat-x;
+}
+
+.medico-insights-band__inner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4.5vw, 3rem);
+}
+
+.medico-insights-band__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.medico-insights-band__heading {
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--medico-blue);
+}
+
+.medico-insights-band__body,
+.medico-insights-band__ask {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: var(--medico-ink);
+}
+
+.medico-insights-band__ask {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.medico-insights-band__bullets {
+  margin: 0.65rem 0 0;
+  padding: 0 0 0 1.15rem;
+  list-style: disc;
+  display: grid;
+  gap: 0.35rem;
+  color: var(--medico-ink);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.medico-insights-band__summary-lead {
+  margin: 0 0 1rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--medico-ink);
+}
+
+.medico-insights-band__numbers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+  counter-reset: medico-insight;
+}
+
+.medico-insights-band__numbers li {
+  position: relative;
+  padding-left: 1.55rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--medico-blue);
+  counter-increment: medico-insight;
+}
+
+.medico-insights-band__numbers li::before {
+  content: counter(medico-insight) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 500;
+  color: var(--medico-blue);
+}
+
+.medico-insight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.medico-insight-card {
+  padding: 1.25rem 1.35rem;
+  border-radius: 1rem;
+  background: var(--medico-blue-mist);
+}
+
+.medico-insight-card__n {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--medico-blue);
+}
+
+.medico-insight-card p,
+.medico-bullet-list {
+  margin: 0;
+  color: var(--medico-ink);
+  line-height: 1.55;
+}
+
+.medico-bullet-list {
+  margin-top: 0.65rem;
+  padding-left: 1.15rem;
+  color: var(--medico-muted);
+}
+
+.medico-pain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.medico-pain-grid li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--medico-line);
+}
+
+.medico-pain-grid span {
+  font-weight: 700;
+  color: var(--medico-blue);
+}
+
+.medico-pain-grid p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.medico-persona-card {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.75rem;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 1.35rem;
+  border: 1px solid var(--medico-line);
+  background: #fff;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+.medico-persona-card__photo {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.medico-persona-card__body h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.55rem;
+}
+
+.medico-persona-card__body h4 {
+  margin: 1.1rem 0 0.45rem;
+  color: var(--medico-blue);
+  font-size: 0.95rem;
+}
+
+.medico-persona-card__body p,
+.medico-persona-card__body li {
+  color: var(--medico-muted);
+  line-height: 1.55;
+}
+
+.medico-persona-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 1rem;
+  margin: 0;
+}
+
+.medico-persona-meta dt {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--medico-muted);
+}
+
+.medico-persona-meta dd {
+  margin: 0.15rem 0 0;
+  font-weight: 600;
+}
+
+.medico-persona-card__cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.medico-persona-card__cols ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.medico-task {
+  margin: 1rem 0 0;
+  color: var(--medico-ink);
+}
+
+.medico-journey-scroll {
+  margin-top: 1.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.medico-journey-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(240px, 280px);
+  gap: 0.85rem;
+}
+
+.medico-journey-card {
+  padding: 1.15rem;
+  border-radius: 1rem;
+  border: 1px solid var(--medico-line);
+  background: var(--medico-blue-mist);
+  min-height: 100%;
+}
+
+.medico-journey-card h3 {
+  margin: 0 0 0.85rem;
+  color: var(--medico-blue);
+  font-size: 1.05rem;
+}
+
+.medico-journey-card h4 {
+  margin: 0.7rem 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--medico-ink);
+}
+
+.medico-journey-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--medico-muted);
+}
+
+.medico-hmw-list {
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.85rem;
+  counter-reset: hmw;
+}
+
+.medico-hmw-list li {
+  counter-increment: hmw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  padding: 1.15rem 1.25rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid var(--medico-line);
+}
+
+.medico-hmw-list li::before {
+  content: counter(hmw, decimal-leading-zero);
+  font-weight: 700;
+  color: var(--medico-blue);
+}
+
+.medico-hmw-list p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.medico-comp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.85rem, 2vw, 1.25rem);
+  margin-top: 1.75rem;
+}
+
+.medico-comp-card {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  padding: clamp(0.75rem, 1.5vw, 1.1rem);
+  border-radius: 1rem;
+  border: 1px solid var(--medico-line);
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.medico-case .medico-comp-card__logo {
+  display: block;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+.medico-feature-list {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1rem, 2.5vw, 1.75rem) clamp(1.5rem, 4vw, 3rem);
+  counter-reset: medico-feature;
+}
+
+.medico-feature-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--medico-blue);
+  counter-increment: medico-feature;
+}
+
+.medico-feature-list li::before {
+  content: counter(medico-feature) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 500;
+  color: var(--medico-blue);
+}
+
+.medico-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.medico-feature-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  padding: 1.2rem 1.3rem;
+  border-radius: 1rem;
+  background: var(--medico-blue-mist);
+}
+
+.medico-feature-card span {
+  font-weight: 700;
+  color: var(--medico-blue);
+}
+
+.medico-feature-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.medico-tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.medico-tag-row li {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--medico-line);
+  font-size: 0.82rem;
+  color: var(--medico-muted);
+}
+
+.medico-feature-phones,
+.medico-phone-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.medico-experience__gallery-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.medico-consultation {
+  background: #f5f6f8;
+}
+
+.medico-consultation__layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.92fr) minmax(280px, 1.08fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+
+.medico-consultation__phone-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.medico-consultation__phone {
+  width: min(300px, 100%);
+  margin-inline: auto;
+}
+
+.medico-consultation__arrow {
+  position: absolute;
+  right: clamp(-2.5rem, -4vw, -1rem);
+  top: 38%;
+  width: clamp(88px, 12vw, 132px);
+  height: auto;
+  color: #111827;
+  pointer-events: none;
+}
+
+.medico-consultation__copy {
+  min-width: 0;
+}
+
+.medico-consultation__headline {
+  margin: 0 0 clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--medico-ink);
+  transform: rotate(-4deg);
+  transform-origin: left center;
+}
+
+.medico-consultation__points {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.medico-consultation__points p {
+  margin: 0;
+  color: var(--medico-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.medico-consultation__points strong {
+  color: var(--medico-ink);
+  font-weight: 700;
+}
+
+.medico-appointment-band {
+  padding: 0;
+}
+
+.medico-appointment-band__stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: clamp(380px, 52vw, 520px);
+  padding: clamp(2rem, 5vw, 3.5rem) var(--medico-gutter);
+  overflow: hidden;
+}
+
+.medico-appointment-band__bg-top {
+  position: absolute;
+  inset: 0 0 42%;
+  background-color: #1a6dff;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.medico-appointment-band__bg-bottom {
+  position: absolute;
+  inset: 42% 0 0;
+  background: #eef1f5;
+}
+
+.medico-appointment-band__phones {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(1100px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+
+.medico-rx-flow-band__stage {
+  min-height: clamp(520px, 78vw, 780px);
+}
+
+.medico-rx-flow-band__phones {
+  width: min(720px, 92%);
+}
+
+.medico-upload {
+  background: #f5f6f8;
+}
+
+.medico-upload__layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(280px, 1.1fr);
+  gap: clamp(1.25rem, 4vw, 3.25rem);
+  align-items: center;
+}
+
+.medico-upload__phone-col {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.medico-upload__phone {
+  width: min(280px, 100%);
+  margin-inline: auto;
+}
+
+.medico-upload__arrow {
+  position: absolute;
+  right: clamp(-2.75rem, -5vw, -1.25rem);
+  top: 42%;
+  width: clamp(110px, 16vw, 170px);
+  height: auto;
+  pointer-events: none;
+}
+
+.medico-upload__lead {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--medico-ink);
+}
+
+.medico-upload__curve-wrap {
+  margin: 0.25rem 0 1.35rem;
+  overflow: visible;
+}
+
+.medico-upload__curve {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  overflow: visible;
+}
+
+.medico-upload__curve-text {
+  fill: var(--medico-ink);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.medico-upload__points {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.medico-upload__points h3 {
+  margin: 0 0 0.3rem;
+  color: var(--medico-blue);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.medico-upload__points p {
+  margin: 0;
+  color: var(--medico-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.medico-symptoms__layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.1fr) minmax(220px, 0.9fr);
+  gap: clamp(1.25rem, 4vw, 3.25rem);
+  align-items: center;
+}
+
+.medico-symptoms__copy {
+  min-width: 0;
+}
+
+.medico-symptoms__sub {
+  margin: 0.15rem 0 1.35rem;
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--medico-ink);
+}
+
+.medico-symptoms__points {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.medico-symptoms__points h3 {
+  margin: 0 0 0.3rem;
+  color: var(--medico-blue);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.medico-symptoms__points p {
+  margin: 0;
+  color: var(--medico-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.medico-symptoms__phone-col {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.medico-symptoms__phone {
+  width: min(280px, 100%);
+  margin-inline: auto;
+}
+
+.medico-symptoms__arrow {
+  position: absolute;
+  left: clamp(-2.75rem, -5vw, -1rem);
+  top: 38%;
+  width: clamp(110px, 16vw, 170px);
+  height: auto;
+  pointer-events: none;
+  /* Asset points left; flip so it directs from copy → phone */
+  transform: scaleX(-1);
+}
+
+.medico-experience__gallery {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(0.35rem, 1vw, 0.65rem);
+  max-width: 920px;
+  margin: clamp(1.75rem, 3.5vw, 2.75rem) auto clamp(2rem, 4vw, 3.25rem);
+  padding-top: clamp(2.75rem, 5vw, 4.5rem);
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.medico-experience__gallery-item {
+  flex: 0 0 auto;
+  width: clamp(132px, 17vw, 210px);
+  border-radius: 1.35rem;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+}
+
+.medico-experience__gallery-item:nth-child(1) {
+  transform: translateY(0);
+}
+
+.medico-experience__gallery-item:nth-child(2) {
+  transform: translateY(clamp(-1.25rem, -2.5vw, -2rem));
+}
+
+.medico-experience__gallery-item:nth-child(3) {
+  transform: translateY(clamp(-2.5rem, -5vw, -4rem));
+}
+
+.medico-experience__gallery-item:nth-child(4) {
+  transform: translateY(clamp(-3.75rem, -7.5vw, -6rem));
+}
+
+.medico-sitemap__info {
+  display: inline-grid;
+  place-items: center;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.4rem;
+  border-radius: 0.3rem;
+  background: var(--medico-blue);
+  color: #fff;
+  font-size: 0.55em;
+  font-weight: 700;
+  font-style: italic;
+  vertical-align: middle;
+  transform: translateY(-0.12em);
+}
+
+.medico-sitemap-tree {
+  --sitemap-line: #2b2b2b;
+  --sitemap-line-w: 1.5px;
+  --sitemap-rail-gap: 1.35rem;
+  margin-top: clamp(2.25rem, 5vw, 3.5rem);
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+}
+
+.medico-sitemap-tree__root {
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.55rem 1.4rem;
+  border-radius: 0.4rem;
+  background: var(--medico-blue);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Trunk from Homepage down to the horizontal rail */
+.medico-sitemap-tree__spine {
+  width: min(1080px, 100%);
+  height: var(--sitemap-rail-gap);
+  margin: 0 auto;
+  position: relative;
+}
+
+.medico-sitemap-tree__spine::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: var(--sitemap-line-w);
+  height: 100%;
+  background: var(--sitemap-line);
+  transform: translateX(-50%);
+}
+
+.medico-sitemap-tree__branches {
+  --sitemap-col-gap: clamp(1.1rem, 2.4vw, 2rem);
+  display: grid;
+  grid-template-columns: repeat(6, minmax(156px, 1fr));
+  gap: var(--sitemap-col-gap);
+  width: min(1080px, 100%);
+  margin-inline: auto;
+  align-items: start;
+  position: relative;
+}
+
+/* Horizontal rail across all branch columns (center of first → center of last) */
+.medico-sitemap-tree__branches::before {
+  content: "";
+  position: absolute;
+  left: calc((100% - 5 * var(--sitemap-col-gap)) / 12);
+  right: calc((100% - 5 * var(--sitemap-col-gap)) / 12);
+  top: 0;
+  height: var(--sitemap-line-w);
+  background: var(--sitemap-line);
+}
+
+.medico-sitemap-tree__branch {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  position: relative;
+  min-width: 0;
+  padding-top: 1.15rem;
+}
+
+/* Drop from rail to branch node */
+.medico-sitemap-tree__branch::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: var(--sitemap-line-w);
+  height: 1.15rem;
+  background: var(--sitemap-line);
+  transform: translateX(-50%);
+}
+
+.medico-sitemap-tree__joint {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0;
+  border-radius: 50%;
+  border: var(--sitemap-line-w) solid var(--sitemap-line);
+  background: #fff;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.medico-sitemap-tree__node--branch {
+  width: 100%;
+  padding: 0.55rem 0.45rem;
+  border-radius: 0.4rem;
+  background: var(--medico-blue);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.medico-sitemap-tree__child-wrap {
+  --child-gutter: 0.95rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--child-gutter) 1fr;
+  gap: 0;
+  margin-top: 0;
+  padding-top: 0.55rem;
+}
+
+/* Vertical stem from parent bottom-left */
+.medico-sitemap-tree__child-stem {
+  position: absolute;
+  left: 0.4rem;
+  top: 0;
+  bottom: 0.85rem;
+  width: var(--sitemap-line-w);
+  background: var(--sitemap-line);
+}
+
+.medico-sitemap-tree__children {
+  grid-column: 2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.medico-sitemap-tree__children li {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.medico-sitemap-tree__child-elbow {
+  position: absolute;
+  left: calc(-1 * var(--child-gutter) + 0.4rem);
+  top: 50%;
+  width: calc(var(--child-gutter) - 0.4rem);
+  height: var(--sitemap-line-w);
+  background: var(--sitemap-line);
+  transform: translateY(-50%);
+}
+
+.medico-sitemap-tree__child-label {
+  display: block;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.35rem;
+  border: 1px solid #7c8aa5;
+  background: #dfe7f4;
+  color: #1f2937;
+  font-size: 0.66rem;
+  line-height: 1.3;
+  text-align: left;
+  font-weight: 500;
+}
+
+.medico-case .medico-sitemap__diagram {
+  display: block;
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  margin-top: clamp(1.75rem, 4vw, 2.75rem);
+  object-fit: contain;
+}
+
+.medico-sitemap-roots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.5rem;
+}
+
+.medico-sitemap-root {
+  padding: 0.7rem 1rem;
+  border-radius: 0.85rem;
+  background: var(--medico-blue);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.medico-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.medico-flow-card {
+  padding: 1.2rem 1.3rem;
+  border-radius: 1rem;
+  border: 1px solid var(--medico-line);
+  background: #fff;
+}
+
+.medico-flow-card h3 {
+  margin: 0 0 0.75rem;
+  color: var(--medico-blue);
+  font-size: 1.05rem;
+}
+
+.medico-flow-card ol {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--medico-muted);
+  line-height: 1.55;
+}
+
+.medico-point-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.medico-point-grid h3,
+.medico-point-stack h3 {
+  margin: 0 0 0.4rem;
+  color: var(--medico-blue);
+  font-size: 1rem;
+}
+
+.medico-point-grid p,
+.medico-point-stack p {
+  margin: 0;
+  color: var(--medico-muted);
+  line-height: 1.55;
+}
+
+.medico-point-stack {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.medico-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.medico-panel {
+  padding: 1.35rem 1.45rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--medico-line);
+  background: var(--medico-blue-mist);
+}
+
+.medico-panel h3 {
+  margin: 0 0 0.75rem;
+  color: var(--medico-blue);
+}
+
+.medico-panel ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--medico-ink);
+  line-height: 1.55;
+}
+
+.medico-panel--good {
+  background: #eefbf4;
+  border-color: #c9f0d9;
+}
+
+.medico-panel--need {
+  background: #fff6ef;
+  border-color: #ffe0c7;
+}
+
+.medico-rec-list {
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.65rem;
+  color: var(--medico-ink);
+  line-height: 1.55;
+  max-width: 42rem;
+}
+
+.medico-thanks {
+  padding: clamp(3.5rem, 8vw, 6rem) 0;
+  background: linear-gradient(180deg, var(--medico-blue-mist), #fff 55%);
+  text-align: center;
+}
+
+.medico-thanks__inner h2 {
+  margin: 0.85rem 0 0.35rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--medico-blue);
+}
+
+.medico-thanks__inner > p {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--medico-ink);
+}
+
+.medico-thanks__phone {
+  margin-top: 2rem;
+  width: min(240px, 55%);
+}
+
+@media (max-width: 960px) {
+  .medico-bg-problems {
+    --medico-bg-photo-set-w: min(380px, 52vw);
+    --medico-bg-photo-pair-w: min(240px, 34vw);
+    --medico-bg-phone-w: min(250px, 32vw);
+    --medico-bg-right-w: max(var(--medico-bg-photo-pair-w), var(--medico-bg-phone-w));
+  }
+
+  .medico-bg-problems__background-inner,
+  .medico-bg-problems__problems-inner {
+    padding-right: calc(var(--medico-bg-right-w) + 1rem);
+  }
+
+  .medico-highlights__meta {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    text-align: left;
+    max-width: 28rem;
+    margin-bottom: clamp(2.5rem, 6vw, 3.5rem);
+  }
+
+  .medico-highlights__process {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1.25rem;
+  }
+
+  .medico-case .medico-highlights__road {
+    width: min(420px, 70vw);
+    right: -6%;
+    bottom: -4%;
+    opacity: 0.85;
+  }
+
+  .medico-solution__row {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .medico-solution__aside {
+    max-width: none;
+    text-align: center;
+  }
+
+  .medico-case .medico-solution__phone-arc {
+    width: min(360px, 78vw);
+  }
+
+  .medico-split,
+  .medico-split--flip,
+  .medico-problem__grid,
+  .medico-persona-card,
+  .medico-chart-grid,
+  .medico-insights-band__top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .medico-insight-grid,
+  .medico-pain-grid,
+  .medico-feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .medico-feature-grid,
+  .medico-flow-grid,
+  .medico-point-grid,
+  .medico-consultation__layout,
+  .medico-upload__layout,
+  .medico-symptoms__layout,
+  .medico-two-col,
+  .medico-meta-grid,
+  .medico-comp-grid,
+  .medico-persona-card__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .medico-consultation__arrow {
+    display: none;
+  }
+
+  .medico-consultation__headline {
+    transform: none;
+  }
+
+  .medico-upload__arrow {
+    display: none;
+  }
+
+  .medico-symptoms__arrow {
+    display: none;
+  }
+
+  .medico-upload__curve-text {
+    font-size: 15px;
+  }
+
+  .medico-photo--b {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(70%, 280px);
+    margin-top: -2rem;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .medico-sitemap-tree__branches {
+    grid-template-columns: repeat(6, minmax(168px, 1fr));
+    width: max-content;
+    min-width: 100%;
+  }
+
+  .medico-sitemap-tree__spine {
+    width: max-content;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .medico-highlights__process {
+    grid-template-columns: 1fr;
+  }
+
+  .medico-case .medico-highlights__road {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    display: block;
+    width: min(360px, 92vw);
+    margin: 1.75rem auto 0;
+    opacity: 1;
+  }
+
+  .medico-bg-problems {
+    --medico-bg-photo-set-w: min(320px, 88vw);
+    --medico-bg-photo-pair-w: min(260px, 72vw);
+    --medico-bg-phone-w: min(240px, 62vw);
+    --medico-bg-right-w: max(var(--medico-bg-photo-pair-w), var(--medico-bg-phone-w));
+  }
+
+  .medico-bg-problems__right {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    min-height: auto;
+    margin-top: 1.5rem;
+  }
+
+  .medico-case .medico-bg-problems__photos-pair {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 0 auto 1.25rem;
+  }
+
+  .medico-bg-problems__background {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .medico-bg-problems__background-inner,
+  .medico-bg-problems__problems-inner {
+    padding-right: 0;
+  }
+
+  .medico-bg-problems__right .medico-bg-problems__phone {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  .medico-case .medico-bg-problems__photos-trio {
+    margin: 0 auto;
+  }
+
+  .medico-hero__title {
+    max-width: none;
+    font-size: clamp(1.7rem, 8vw, 2.2rem);
+  }
+
+  .medico-journey-track {
+    grid-auto-columns: minmax(220px, 78vw);
+  }
+}

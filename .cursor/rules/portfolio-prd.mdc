@@ -1,0 +1,25 @@
+---
+description: Portfolio PRD source of truth — positioning and scope
+alwaysApply: true
+---
+
+# Portfolio PRD
+
+Before product, IA, or UX decisions, read `docs/PRD.md`.
+
+## Positioning
+
+- Title: **Product Designer**
+- Specialization: **Fintech • AI • Enterprise Platforms**
+- Brand: simplify complex workflows into intuitive, scalable, user-centered experiences
+- Audience: PMs, founders, CTOs, recruiters, hiring managers
+
+## Core pages (only)
+
+Home · About · Case Studies · Projects — plus persistent Contact CTA.
+
+Do not invent primary nav sections unless `docs/PRD.md` and `docs/INFORMATION_ARCHITECTURE.md` are updated first.
+
+## Placeholders
+
+Keep `{{FULL_NAME}}`, `{{EMAIL}}`, `{{CALENDAR_URL}}`, `{{LINKEDIN_URL}}` until real values are provided.

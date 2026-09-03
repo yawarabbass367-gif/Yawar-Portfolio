@@ -1,0 +1,18 @@
+---
+description: Portfolio content strategy — trust ladder and tone
+alwaysApply: true
+---
+
+# Portfolio Content
+
+Follow `docs/CONTENT_STRATEGY.md`. Narrative order:
+
+Home → About → Case Studies → Projects → Contact CTA
+
+## Rules
+
+- Case studies prove **product thinking** (problem, goals, decisions, results)—not UI galleries
+- Use `docs/templates/CASE_STUDY_TEMPLATE.md` for every study
+- Homepage must answer who / what / why trust within seconds
+- Voice: precise, confident, enterprise-ready — no filler marketing fluff
+- CTAs: contact, schedule, hire, freelance — keep paths obvious

@@ -1,0 +1,374 @@
+INSTANCE_UNIQUE 31 TOTAL 393
+SYMBOLS 8
+SCREENS 131
+=== INSTANCES ===
+ 114  Button
+  66  Status / Badge
+  39  Progress
+  38  Navigation / Mobile Bottom Bar
+  37  Building Blocks/status-bar
+  15  Navigation / Dashboard Header
+  13  Segmented Control
+  13  vuesax/linear/arrow-down
+   6  MobileNumberInput
+   5  PasswordInput
+   5  ConfirmPasswordInput
+   5  Status Card
+   4  FullNameInput
+   4  EmailInput
+   4  CNICInput
+   4  TermsCheckbox
+   4  CreateAccountButton
+   3  VerifyButton
+   2  Full Name Field
+   1  faysal logo
+   1  LoginButton
+   1  Alert
+   1  ContinueButton
+   1  NewPasswordInput
+   1  ResetPasswordButton
+   1  Loan Application Status
+   1  Android Top Bar
+   1  Top Bar
+   1  eye-off
+   1  vuesax/linear/arrow-right
+   1  DoneBtn
+=== SYMBOLS ===
+120:9118  faysal logo
+185:2506  Status Card
+103:7373  Android Top Bar
+107:2099  faysal bank logo 1
+108:1373  Dashboard Card Background
+185:2499  icon-shield
+185:2502  icon-star
+185:2498  icon-check
+=== SCREENS ===
+65:43	Login	12025	4807	390x844
+117:8762	Splash	11595	4807	390x844
+65:67	Sign Up	12455	4807	390x870
+69:241	OTP Verification	14175	4807	390x844
+69:305	OTP Verification - Error State	14605	4807	390x844
+72:293	Sign Up - Validation Errors	12885	4807	390x1068
+72:583	Sign Up - Loading	13315	4807	390x930
+72:874	Sign Up - Server Error	13745	4807	390x1038
+72:1165	Account Created	15035	4807	390x844
+74:502	forgot-password	17981	4751	390x844
+74:594	recovery-otp	18411	4751	390x844
+74:662	create-new-password	18841	4751	390x900
+74:805	password-reset-success	19271	4751	390x844
+77:750	Screen-Loan-Discovery	-537	10942	390x844
+77:852	Screen-Loan-Product-Details	-107	10942	390x844
+77:1435	loan-discovery-with-active	26277	4911	390x868
+77:1548	loan-discovery-with-pending	26707	4911	390x868
+77:1649	loan-product-detail-pending	27137	4911	390x900
+77:1712	loan-product-detail-active	27567	4911	390x900
+85:632	dashboard-ntb-empty	22863	4727	390x844
+88:908	hf-loan-discovery	11474	8258	390x844
+177:3032	hf-loan-discovery	23533	8258	390x844
+88:949	hf-product-details	11904	8258	390x844
+177:3063	hf-product-details	23963	8258	390x844
+88:956	hf-eligibility-check	12334	8258	390x844
+177:3093	hf-eligibility-check	24393	8258	390x844
+88:963	hf-eligibility-result	12764	8258	390x844
+177:3126	hf-eligibility-result	24823	8258	390x844
+88:970	hf-app-intro	13194	8258	390x844
+177:3142	hf-app-intro	25253	8258	390x844
+88:977	hf-personal-info	13624	8258	390x844
+177:3173	hf-personal-info	25683	8258	390x844
+88:984	hf-personal-details	14054	8258	390x844
+177:3207	hf-personal-details	26113	8258	390x844
+88:991	hf-residential-info	14484	8258	390x906
+177:3238	hf-residential-info	26543	8258	390x906
+88:998	hf-employment-income	14914	8258	390x844
+177:3274	hf-employment-income	26973	8258	390x844
+88:1005	hf-employment-details	15344	8258	390x844
+177:3300	hf-employment-details	27403	8258	390x844
+88:1012	hf-financial-info	15774	8258	390x844
+177:3331	hf-financial-info	27833	8258	390x844
+88:1019	hf-financing-requirement	16204	8258	390x844
+177:3363	hf-financing-requirement	28263	8258	390x844
+88:1026	hf-property-type	16634	8258	390x844
+177:3386	hf-property-type	28693	8258	390x844
+88:1033	hf-property-info	17064	8258	390x896
+177:3412	hf-property-info	29123	8258	390x896
+161:2628	hf-document-checklist	17481	8258	390x844
+177:3447	hf-document-checklist	29540	8258	390x844
+161:2692	hf-document-checklist	17898	8258	390x844
+177:3523	hf-document-checklist	29957	8258	390x844
+88:1054	hf-bank-account	19246	8258	390x844
+177:3644	hf-bank-account	31305	8258	390x844
+161:2796	hf-bank-account	18375	8258	390x844
+177:3665	hf-bank-account	30434	8258	390x844
+88:1061	hf-identity-verification	19676	8258	390x844
+177:3700	hf-identity-verification	31735	8258	390x844
+88:1068	hf-review-application	20106	8258	390x1146
+177:3716	hf-review-application	32165	8258	390x1146
+88:1075	hf-declarations	20536	8258	390x844
+177:3777	hf-declarations	32595	8258	390x844
+88:1082	hf-submit-confirmation	20966	8258	390x844
+177:3804	hf-submit-confirmation	33025	8258	390x844
+88:1089	hf-submitted	21396	8258	390x844
+177:3817	hf-submitted	33455	8258	390x844
+88:1091	hf-tracking	38861	8258	390x844
+88:1098	hf-approved	39291	8258	390x844
+88:1100	hf-loan-offer	39721	8258	390x844
+88:1107	hf-agreement	40151	8258	390x844
+88:1114	hf-disbursement	40581	8258	390x844
+88:1116	hf-active-loan-dashboard	41011	8258	390x844
+93:6607	hf-active-loan-dashboard	22008	4717	390x1183
+161:2504	hf-active-loan-dashboard	22420	4717	390x1327
+96:1252	lm-loan-details-active	44423	8258	390x1506
+96:1258	lm-repayment-schedule	44853	8258	390x1118
+96:1264	lm-schedule-expanded	45283	8258	390x1180
+96:1270	lm-loan-details-paid	45713	8258	390x1302
+96:1276	lm-loan-details-overdue	46143	8258	390x1431
+99:1303	pay-select-amount	11606	12387	390x844
+99:1309	pay-select-method	12036	12387	390x844
+99:1315	pay-select-account	12466	12387	390x844
+99:1321	pay-review	12896	12387	390x844
+99:1327	pay-authentication	13326	12387	390x844
+99:1333	pay-processing	13756	12387	390x844
+99:1336	pay-success	14186	12387	390x844
+99:1339	pay-failed	14616	12387	390x844
+99:1342	pay-pending	15046	12387	390x844
+99:1345	pay-updated-loan	15476	12387	390x1034
+177:2990	pay-select-method	17024	12414	390x844
+102:1401	pay-raast-details	17454	12414	390x844
+102:1442	pay-raast-review	17884	12414	390x844
+127:1407	payments-upcoming-single	20264	12414	390x844
+127:1519	payments-upcoming-multiple	20686	12414	390x844
+127:1688	payments-due-today	21108	12414	390x844
+127:1800	payments-overdue	21530	12414	390x844
+127:1912	payments-no-upcoming	21952	12414	390x844
+127:2012	payments-history	22462	12414	390x844
+127:2092	payments-history-filtered	22900	12414	390x844
+127:2172	payments-history-empty	23338	12414	390x844
+127:2265	payment-details	23776	12414	390x844
+127:2410	payment-flow-entry	24214	12414	390x844
+148:1828	Screen-MoreMenu	17713	15248	390x844
+148:1875	Screen-Profile	18151	15248	390x844
+148:1991	Screen-EditProfile	18589	15248	390x844
+148:2051	Screen-EditProfilePhoto	19027	15248	390x844
+148:2095	Screen-EditProfileSuccess	19465	15248	390x844
+148:2139	Screen-ChangePassword	19903	15248	390x844
+148:2207	Screen-ChangePasswordSuccess	20341	15248	390x844
+148:2267	security-biometric-off	11603	15142	390x844
+148:2318	security-biometric-setup	12025	15142	390x844
+148:2415	security-biometric-on	12447	15142	390x844
+148:2467	settings	12869	15142	390x844
+148:2522	settings-notifications	13291	15142	390x844
+148:2613	settings-language	13713	15142	390x844
+148:2713	Screen-HelpSupport	27288	12414	390x844
+148:2805	Screen-HelpCategory	27710	12414	390x844
+148:2874	Screen-HelpArticle	28132	12414	390x844
+148:2942	Screen-ContactSupport	28554	12414	390x844
+148:3014	Screen-RaiseComplaint	28976	12414	390x844
+148:3081	Screen-ComplaintSubmitted	29398	12414	390x844
+148:3113	Screen-HelpEmpty	29820	12414	390x844
+148:3263	Screen-Documents	33986	12370	412x844
+148:3372	Screen-Documents	34430	12370	412x844
+148:3470	Screen-DocumentDetails	34874	12370	412x844
+148:3573	Screen-Documents	35318	12370	412x844
+148:3634	Screen-Legal	35762	12370	412x844
+148:3699	Screen-Terms&amp;Conditions	36206	12370	412x1049
+148:3762	Screen-PrivacyPolicy	36650	12370	412x1001
+174:2418	hf-bank-account-confirmed	18805	8258	390x844
+177:3830	hf-bank-account-confirmed	30864	8258	390x844
+=== TOP NONSCREEN ===
+123:9120	BackHeader	390x56
+93:6703	Group 1	1245x162
+93:6704	Group 2	10006x162
+177:3029	Group 1010108427	10006x162
+93:6707	Group 3	2817.929443359375x162
+94:6772	Group 4	2817.929443359375x162
+94:6775	Group 5	4196x162
+100:6837	Group 6	1250x162
+123:9658	Group 1010108423	4368x162
+157:2295	Group 1010108424	2922x162
+157:2296	Group 1010108425	2922x162
+157:2299	Group 1010108426	2922x162
+180:4144	Group 1010108429	350x206
+105:1672	Group 1010108422	350x265
+102:1351	Section: Raast Branch	406x32
+103:7255	Input	393x354
+180:4117	Group 1010108428	324x224.0240936279297
+190:4331	Group 1010108431	350x255
+=== ICON NAMES ===
+  88  arrow-left
+  37  Building Blocks/status-bar
+  32  Info
+  25  Radio
+  23  Icon
+  21  check
+  20  Info Row
+  14  HomeIndicator
+  13  vuesax/linear/arrow-down
+  13  chevron-right
+  11  icons
+  11  cloud-upload
+  11  file-text
+  10  Upload Placeholder
+  10  Uploaded File Card
+  10  file-icon
+  10  file-details
+  10  trash-2
+  10  Info-Row
+   9  ProductCard
+   9  IconBox
+   9  Checkbox
+   9  chevron-down
+   8  IconWrapper
+   6  ios-signal
+   6  ios-wifi-signal
+   6  ios-battery-full
+   6  user
+   6  car
+   6  home
+   6  Status Card
+   6  shield
+   6  info
+   6  InactiveRadio
+   6  CategoryCard
+   5  signal
+   5  wifi
+   5  battery
+   4  EmailInput
+   4  TermsCheckbox
+   4  hf-document-checklist
+   4  icon
+   4  ProgressCard
+   4  Icon-Wrapper
+   3  DetailBlock
+   3  Chevron
+   3  SuccessCard
+   3  Loan Information
+   3  LoanInfo
+   3  Start Date
+   3  eye
+   3  icon-container
+   3  fingerprint
+   3  mail
+   3  ChannelCard
+   2  hf-eligibility-check
+   2  Personal information
+   2  Property information
+   2  hf-personal-info
+   2  Email Address
+   2  hf-residential-info
+   2  Employment Start Date
+   2  hf-financial-info
+   2  Home Purchase
+   2  Home Renovation
+   2  hf-property-info
+   2  Personal Information
+   2  MethodInfo
+   2  lock
+   2  Screen-EditProfile
+   2  info-card
+   2  SearchBar
+   2  search
+   2  phone
+   2  Details-Card-Wrapper
+   2  Bank-Card
+   2  Card-Header
+   2  Card-Title-Group
+   2  building
+   2  Edit-Details-Button
+   2  edit
+   1  alert-triangle
+   1  Alert
+   1  Success Card
+   1  AppInfo
+   1  Credit Assessment
+   1  DisbursementInfo
+   1  OverdueAlert
+   1  InstallmentInfo
+   1  LockIcon
+   1  ErrorIcon
+   1  PendingIcon
+   1  eye-off
+   1  Dashboard Card Background
+   1  vuesax/linear/arrow-right
+   1  star
+   1  Screen-Profile
+   1  Screen-EditProfilePhoto
+   1  Screen-EditProfileSuccess
+   1  fingerprint-pattern
+   1  clock
+   1  ProfileSection
+   1  ProfileCard
+   1  bell
+   1  ActiveRadio
+   1  credit-card
+   1  file
+   1  UploadArea
+   1  ReferenceCard
+   1  EmptyIconWrapper
+   1  search-x
+   1  DocInfoCard
+   1  LargeIconWrapper
+   1  IconCircle
+   1  icon-shield
+   1  icon-star
+   1  icon-check
+=== REPEATED FRAMES >=8 ===
+ 349  Frame
+  91  Input
+  89  BackHeader
+  88  BackButton
+  88  arrow-left
+  71  FooterCTA
+  68  Body
+  44  Header
+  32  Info
+  25  Radio
+  23  Icon
+  21  check
+  20  Row
+  20  Info Row
+  19  MainContent
+  19  Content
+  17  Left
+  15  StatusBar
+  15  divider
+  14  HomeIndicator
+  14  Right
+  13  chevron-right
+  12  Text
+  11  icons
+  11  cloud-upload
+  11  file-text
+  11  DocumentItem
+  11  ActionBadge
+  10  HeaderSection
+  10  Footer
+  10  Todo
+  10  Upload Placeholder
+  10  Uploaded File Card
+  10  file-icon
+  10  file-details
+  10  actions
+  10  remove
+  10  trash-2
+  10  success
+  10  Info-Row
+  10  Row-Content
+   9  ProductCard
+   9  HeaderRow
+   9  IconBox
+   9  HeaderTexts
+   9  FeaturesGrid
+   9  Stat1
+   9  Stat2
+   9  MetricCol
+   9  Item
+   9  DocRow
+   9  Tenure
+   9  Consent
+   9  Checkbox
+   9  MenuItem
+   9  chevron-down
+   8  SettingRow
+   8  IconWrapper
+   8  FAQItemRow
+   8  FAQHeader
