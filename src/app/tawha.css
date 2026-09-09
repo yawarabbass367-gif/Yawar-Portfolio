@@ -71,7 +71,7 @@
 .tawha-hero__tagline {
   position: absolute;
   z-index: 2;
-  top: clamp(2.75rem, 6.5vw, 4.25rem);
+  top: clamp(3.75rem, 8.5vw, 5.5rem);
   left: 50%;
   width: min(calc(100% - 2rem), 44rem);
   margin: 0;
@@ -88,13 +88,14 @@
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 56%;
+  bottom: 0;
+  top: auto;
   width: min(86%, 980px);
   height: auto;
-  max-height: 88%;
-  transform: translate(-50%, -50%);
+  max-height: 90%;
+  transform: translateX(-50%);
   object-fit: contain;
-  object-position: center center;
+  object-position: center bottom;
 }
 
 @media (max-width: 640px) {
@@ -105,11 +106,12 @@
 
   .tawha-hero__composition {
     width: 92%;
-    top: 58%;
+    bottom: 0;
+    top: auto;
   }
 
   .tawha-hero__tagline {
-    top: 2.5rem;
+    top: 3.25rem;
     font-size: 0.7rem;
     line-height: 1.3;
   }
@@ -1143,178 +1145,1502 @@
   }
 }
 
-/* Challenge 1 — Serving Consumers And Businesses */
-.tawha-challenge1 {
-  padding: 0 0 clamp(3rem, 7vw, 5rem);
+/* Personal Benchmark */
+.tawha-benchmark {
+  padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(1.5rem, 3vw, 2.25rem);
   background: var(--tawha-mint);
 }
 
-.tawha-challenge1__panel {
+.tawha-benchmark__panel {
   padding: clamp(2rem, 4.5vw, 3.25rem) clamp(1.25rem, 3.5vw, 3rem)
     clamp(2.25rem, 5vw, 3.5rem);
   border-radius: clamp(0.85rem, 1.6vw, 1.25rem);
   background: #fff;
 }
 
-.tawha-challenge1__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.tawha-benchmark__title {
+  margin: 0 0 clamp(2rem, 4.5vw, 3.25rem);
   text-align: center;
+  font-size: clamp(1.75rem, 3.8vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--tawha-green);
 }
 
-.tawha-challenge1__title {
-  margin: 0;
-  max-width: 48rem;
-  font-size: clamp(1.45rem, 3.2vw, 2.35rem);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+.tawha-benchmark__rows {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+.tawha-benchmark__row-title {
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  text-align: center;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
   color: var(--tawha-ink);
 }
 
-.tawha-challenge1__subtitle {
-  margin: 0.65rem 0 0;
-  max-width: 36rem;
-  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
-  font-weight: 500;
-  line-height: 1.35;
-  color: var(--tawha-muted);
-}
-
-.tawha-challenge1__badge {
-  align-self: flex-start;
-  margin-top: clamp(1.25rem, 3vw, 2rem);
-  padding: 0.45rem 1.1rem;
-  border-radius: 0.55rem;
-  background: var(--tawha-green-bright);
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #fff;
-}
-
-.tawha-challenge1__phones {
+.tawha-benchmark__grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1.5rem, 5vw, 4.5rem);
-  max-width: 44rem;
-  margin: clamp(1.75rem, 4vw, 2.75rem) auto 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.85rem, 2vw, 1.5rem);
   align-items: start;
 }
 
-.tawha-challenge1__phone {
+.tawha-benchmark__col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-}
-
-.tawha-challenge1__phone-label {
-  margin: 0 0 0.85rem;
-  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
-  font-weight: 500;
-  line-height: 1.3;
-  color: var(--tawha-muted);
   text-align: center;
 }
 
-.tawha-challenge1__phone-img {
+.tawha-benchmark__app {
+  margin: 0 0 0.75rem;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--tawha-ink);
+}
+
+.tawha-benchmark__phone {
+  margin: 0;
+  width: 100%;
+  max-width: 220px;
+}
+
+.tawha-benchmark__phone-img {
   display: block;
-  width: min(100%, 262px);
+  width: 100%;
   height: auto;
 }
 
-.tawha-challenge1__why {
+.tawha-benchmark__observation {
+  margin-top: 0.85rem;
+  max-width: 16rem;
+  text-align: left;
+}
+
+.tawha-benchmark__observation-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--tawha-ink);
+}
+
+.tawha-benchmark__observation-body {
+  margin: 0;
+  font-size: clamp(0.72rem, 1.05vw, 0.82rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--tawha-muted);
+}
+
+@media (max-width: 900px) {
+  .tawha-benchmark__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 1.25rem;
+  }
+
+  .tawha-benchmark__phone {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  .tawha-benchmark__grid {
+    grid-template-columns: 1fr;
+    max-width: 18rem;
+    margin-inline: auto;
+  }
+
+  .tawha-benchmark__observation {
+    max-width: none;
+  }
+}
+
+/* Personal Benchmark — Key Findings */
+.tawha-findings {
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-findings__panel {
+  padding: clamp(2rem, 4.5vw, 3.25rem) clamp(1.25rem, 3.5vw, 3rem)
+    clamp(2.25rem, 5vw, 3.5rem);
+  border-radius: clamp(0.85rem, 1.6vw, 1.25rem);
+  background: #fff;
+}
+
+.tawha-findings__header {
+  text-align: center;
+  margin-bottom: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.tawha-findings__title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--tawha-green);
+}
+
+.tawha-findings__subtitle {
+  margin: 0.65rem 0 0;
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--tawha-green);
+}
+
+.tawha-findings__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+.tawha-findings__block-title {
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  text-align: center;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--tawha-ink);
+}
+
+.tawha-findings__phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.75rem, 2vw, 1.35rem);
+}
+
+.tawha-findings__phones--two {
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.tawha-findings__phone {
+  margin: 0;
+  flex: 0 1 auto;
+  width: min(100%, clamp(120px, 18vw, 200px));
+}
+
+.tawha-findings__phones--two .tawha-findings__phone {
+  width: min(100%, clamp(140px, 22vw, 220px));
+}
+
+.tawha-findings__phone-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tawha-findings__copy {
   max-width: 52rem;
-  margin: clamp(2.25rem, 5vw, 3.5rem) auto 0;
+  margin: clamp(1.25rem, 3vw, 1.85rem) auto 0;
   text-align: center;
 }
 
-.tawha-challenge1__why-title {
-  margin: 0 0 0.85rem;
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
+.tawha-findings__line {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.2vw, 0.98rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--tawha-muted);
+}
+
+.tawha-findings__line + .tawha-findings__line {
+  margin-top: 0.85rem;
+}
+
+.tawha-findings__label {
   font-weight: 700;
-  line-height: 1.3;
+  color: var(--tawha-ink);
+}
+
+@media (max-width: 640px) {
+  .tawha-findings__copy {
+    text-align: left;
+  }
+
+  .tawha-findings__phone {
+    width: min(42vw, 170px);
+  }
+
+  .tawha-findings__phones--two .tawha-findings__phone {
+    width: min(42vw, 180px);
+  }
+}
+
+/* Personal — UX Opportunities */
+.tawha-ux-opp {
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-ux-opp__panel {
+  padding: clamp(2rem, 4.5vw, 3.25rem) clamp(1.25rem, 3.5vw, 3rem)
+    clamp(2.25rem, 5vw, 3.5rem);
+  border-radius: clamp(0.85rem, 1.6vw, 1.25rem);
+  background: #fff;
+}
+
+.tawha-ux-opp__header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 5.5vw, 3.75rem);
+}
+
+.tawha-ux-opp__title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--tawha-green);
+}
+
+.tawha-ux-opp__subtitle {
+  margin: 0.65rem 0 0;
+  max-width: 40rem;
+  margin-inline: auto;
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--tawha-green);
+}
+
+.tawha-ux-opp__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 7vw, 5rem);
+}
+
+.tawha-ux-opp__block {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+.tawha-ux-opp__block:has(.tawha-ux-opp__phones--one) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.tawha-ux-opp__number-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.tawha-ux-opp__number {
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #b8e0c8;
+}
+
+.tawha-ux-opp__number-label {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-weight: 600;
+  color: var(--tawha-green);
+}
+
+.tawha-ux-opp__block-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.25;
   letter-spacing: -0.02em;
   color: var(--tawha-ink);
 }
 
-.tawha-challenge1__why-body {
-  margin: 0;
+.tawha-ux-opp__description {
+  margin: 0 0 1.15rem;
+  max-width: 42rem;
   font-size: clamp(0.88rem, 1.25vw, 1rem);
-  line-height: 1.65;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--tawha-muted);
+}
+
+.tawha-ux-opp__callout {
+  max-width: 42rem;
+  padding: 1rem 1.15rem 1.1rem;
+  border-radius: 0.75rem;
+  background: var(--tawha-pill-bg);
+}
+
+.tawha-ux-opp__callout-label {
+  margin: 0 0 0.4rem;
+  font-size: clamp(0.82rem, 1.15vw, 0.92rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--tawha-green);
+}
+
+.tawha-ux-opp__callout-body {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--tawha-ink);
+}
+
+.tawha-ux-opp__callout-body strong {
+  font-weight: 700;
+}
+
+.tawha-ux-opp__phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: clamp(0.65rem, 1.8vw, 1.15rem);
+}
+
+.tawha-ux-opp__phones--one {
+  justify-content: flex-start;
+}
+
+.tawha-ux-opp__phone {
+  margin: 0;
+  flex: 0 1 auto;
+  width: min(100%, clamp(110px, 16vw, 175px));
+}
+
+.tawha-ux-opp__phones--one .tawha-ux-opp__phone {
+  width: min(100%, clamp(160px, 24vw, 240px));
+}
+
+.tawha-ux-opp__phone-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 720px) {
+  .tawha-ux-opp__block:has(.tawha-ux-opp__phones--one) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tawha-ux-opp__phones {
+    justify-content: center;
+  }
+
+  .tawha-ux-opp__phone {
+    width: min(42vw, 165px);
+  }
+
+  .tawha-ux-opp__phones--one .tawha-ux-opp__phone {
+    width: min(55vw, 220px);
+  }
+}
+
+/* Business Benchmark */
+.tawha-biz-bench {
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-biz-bench__panel {
+  padding: clamp(2rem, 4.5vw, 3.25rem) clamp(1.25rem, 3.5vw, 3rem)
+    clamp(2.25rem, 5vw, 3.5rem);
+  border-radius: clamp(0.85rem, 1.6vw, 1.25rem);
+  background: #fff;
+}
+
+.tawha-biz-bench__title {
+  margin: 0 0 clamp(2rem, 4.5vw, 3.25rem);
+  text-align: center;
+  font-size: clamp(1.75rem, 3.8vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--tawha-green);
+}
+
+.tawha-biz-bench__rows {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+.tawha-biz-bench__row-title {
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  text-align: center;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--tawha-ink);
+}
+
+.tawha-biz-bench__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3.5vw, 2.5rem) clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.tawha-biz-bench__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tawha-biz-bench__shot {
+  margin: 0;
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+}
+
+.tawha-biz-bench__shot-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tawha-biz-bench__observation {
+  margin-top: 0.85rem;
+  max-width: 28rem;
+  text-align: left;
+}
+
+.tawha-biz-bench__observation-label {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--tawha-ink);
+}
+
+.tawha-biz-bench__observation-body {
+  margin: 0;
+  font-size: clamp(0.75rem, 1.1vw, 0.88rem);
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--tawha-muted);
 }
 
 @media (max-width: 720px) {
-  .tawha-challenge1__phones {
+  .tawha-biz-bench__grid {
     grid-template-columns: 1fr;
-    max-width: 20rem;
-    gap: 2.25rem;
+    max-width: 28rem;
+    margin-inline: auto;
   }
 
-  .tawha-challenge1__badge {
-    align-self: center;
+  .tawha-biz-bench__observation {
+    max-width: none;
+  }
+}
+
+/* Business Benchmark — Key Findings */
+.tawha-biz-findings {
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-biz-findings__panel {
+  padding: clamp(2rem, 4.5vw, 3.25rem) clamp(1.25rem, 3.5vw, 3rem)
+    clamp(2.25rem, 5vw, 3.5rem);
+  border-radius: clamp(0.85rem, 1.6vw, 1.25rem);
+  background: #fff;
+}
+
+.tawha-biz-findings__header {
+  text-align: center;
+  margin-bottom: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.tawha-biz-findings__title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--tawha-green);
+}
+
+.tawha-biz-findings__subtitle {
+  margin: 0.65rem 0 0;
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--tawha-ink);
+}
+
+.tawha-biz-findings__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2.75rem, 6vw, 4.5rem);
+}
+
+.tawha-biz-findings__block-title {
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  text-align: center;
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--tawha-ink);
+}
+
+.tawha-biz-findings__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.tawha-biz-findings__shot {
+  margin: 0;
+  width: 100%;
+}
+
+.tawha-biz-findings__shot-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tawha-biz-findings__copy {
+  max-width: 52rem;
+  margin: clamp(1.25rem, 3vw, 1.85rem) auto 0;
+  text-align: center;
+}
+
+.tawha-biz-findings__line {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.2vw, 0.98rem);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--tawha-muted);
+}
+
+.tawha-biz-findings__line + .tawha-biz-findings__line {
+  margin-top: 0.85rem;
+}
+
+.tawha-biz-findings__label {
+  font-weight: 700;
+  color: var(--tawha-ink);
+}
+
+@media (max-width: 720px) {
+  .tawha-biz-findings__grid {
+    grid-template-columns: 1fr;
+    max-width: 28rem;
+    margin-inline: auto;
   }
 
-  .tawha-challenge1__why {
+  .tawha-biz-findings__copy {
     text-align: left;
   }
 }
 
-/* Challenge 2 overrides (same shell as Challenge 1) */
-.tawha-challenge2__header {
-  position: relative;
+/* Business — UX Opportunities */
+.tawha-biz-ux {
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
 }
 
-.tawha-challenge2__badge {
-  align-self: flex-start;
-  margin-top: 0;
-  margin-bottom: clamp(1rem, 2.5vw, 1.5rem);
+.tawha-biz-ux__panel {
+  padding: clamp(2rem, 4.5vw, 3.25rem) clamp(1.25rem, 3.5vw, 3rem)
+    clamp(2.25rem, 5vw, 3.5rem);
+  border-radius: clamp(0.85rem, 1.6vw, 1.25rem);
+  background: #fff;
 }
 
-.tawha-challenge2__roles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: clamp(1.5rem, 6vw, 4.5rem);
-  margin: clamp(1.25rem, 3vw, 2rem) 0 0;
-  padding: 0;
-  list-style: none;
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
+.tawha-biz-ux__header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 5.5vw, 3.75rem);
+}
+
+.tawha-biz-ux__title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--tawha-green);
+}
+
+.tawha-biz-ux__subtitle {
+  margin: 0.65rem 0 0;
+  max-width: 42rem;
+  margin-inline: auto;
+  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
   font-weight: 500;
+  line-height: 1.45;
+  color: var(--tawha-green);
+}
+
+.tawha-biz-ux__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 7vw, 5rem);
+}
+
+.tawha-biz-ux__block {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3.5vw, 2.25rem);
+}
+
+.tawha-biz-ux__number-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.tawha-biz-ux__number {
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #b8e0c8;
+}
+
+.tawha-biz-ux__number-label {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  font-weight: 600;
+  color: var(--tawha-green);
+}
+
+.tawha-biz-ux__block-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--tawha-ink);
+}
+
+.tawha-biz-ux__description {
+  margin: 0 0 1.15rem;
+  max-width: 46rem;
+  font-size: clamp(0.88rem, 1.25vw, 1rem);
+  font-weight: 400;
+  line-height: 1.6;
   color: var(--tawha-muted);
 }
 
-.tawha-challenge2__phones {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1rem, 3vw, 2rem);
-  max-width: 52rem;
+.tawha-biz-ux__callout {
+  max-width: 46rem;
+  padding: 1rem 1.15rem 1.1rem;
+  border-radius: 0.75rem;
+  background: var(--tawha-pill-bg);
 }
 
-.tawha-challenge2__phone-img {
-  width: min(100%, 220px);
+.tawha-biz-ux__callout-label {
+  margin: 0 0 0.4rem;
+  font-size: clamp(0.82rem, 1.15vw, 0.92rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--tawha-green);
 }
 
-@media (max-width: 900px) {
-  .tawha-challenge2__phones {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 28rem;
-  }
+.tawha-biz-ux__callout-body {
+  margin: 0;
+  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--tawha-ink);
+}
+
+.tawha-biz-ux__callout-body strong {
+  font-weight: 700;
+}
+
+.tawha-biz-ux__screens--one {
+  width: 100%;
+}
+
+.tawha-biz-ux__screens--one .tawha-biz-ux__shot {
+  margin: 0;
+  width: 100%;
+  max-width: 960px;
+}
+
+.tawha-biz-ux__screens--grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  align-items: start;
+}
+
+.tawha-biz-ux__screens--grid .tawha-biz-ux__shot {
+  margin: 0;
+  width: 100%;
+}
+
+.tawha-biz-ux__shot-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media (max-width: 720px) {
-  .tawha-challenge2__badge {
-    align-self: center;
-  }
-
-  .tawha-challenge2__phones {
+  .tawha-biz-ux__screens--grid {
     grid-template-columns: 1fr;
-    max-width: 16rem;
+  }
+}
+
+/* Module 1 — Accounts */
+.tawha-module1 {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-module1__stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(calc(100% - (var(--tawha-gutter) * 2)), var(--tawha-board));
+  margin-inline: auto;
+  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+  min-height: clamp(560px, 72vw, 920px);
+}
+
+.tawha-module1__bg {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tawha-module1__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: clamp(1.5rem, 3.5vw, 2.75rem) clamp(1rem, 2.5vw, 2rem)
+    clamp(1.75rem, 4vw, 3rem);
+}
+
+.tawha-module1__intro {
+  position: relative;
+  min-height: clamp(7.5rem, 14vw, 9.5rem);
+  margin-bottom: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.tawha-module1__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tawha-module1__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.15rem;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--tawha-ink);
+}
+
+.tawha-module1__title {
+  margin: 0.85rem 0 0;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.tawha-module1__callout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: min(100%, 22rem);
+  margin: 0;
+  padding: clamp(0.95rem, 2vw, 1.25rem) clamp(1rem, 2.2vw, 1.4rem);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: clamp(0.75rem, 1.4vw, 1rem);
+  background: rgba(6, 28, 18, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 10px 32px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px) saturate(1.1);
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+}
+
+.tawha-module1__callout-line {
+  margin: 0;
+  font-size: clamp(0.8rem, 1.15vw, 0.92rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tawha-module1__callout-line + .tawha-module1__callout-line {
+  margin-top: 0.75rem;
+}
+
+.tawha-module1__callout-label {
+  font-weight: 700;
+  color: #fff;
+}
+
+.tawha-module1__phones {
+  position: relative;
+  z-index: 1;
+  margin: clamp(0.5rem, 1.5vw, 1rem) auto 0;
+  width: min(100%, 68rem);
+}
+
+.tawha-module1__phones-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.6rem, 1.5vw, 1.1rem);
+}
+
+.tawha-module1__phones-row--top {
+  margin-bottom: clamp(0.6rem, 1.5vw, 1.1rem);
+}
+
+.tawha-module1__phone {
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.tawha-module1__phone-img {
+  display: block;
+  width: clamp(96px, 13.5vw, 168px);
+  height: auto;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.28));
+}
+
+@media (max-width: 900px) {
+  .tawha-module1__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+    min-height: 0;
   }
 
-  .tawha-challenge2__roles {
-    gap: 1.25rem 2rem;
+  .tawha-module1__callout {
+    position: static;
+    width: 100%;
   }
+
+  .tawha-module1__phone-img {
+    width: clamp(110px, 28vw, 160px);
+  }
+}
+
+@media (max-width: 640px) {
+  .tawha-module1__phones-row {
+    gap: 0.75rem;
+  }
+
+  .tawha-module1__phone-img {
+    width: min(42vw, 160px);
+  }
+}
+
+/* Module 2 — Payments */
+.tawha-module2 {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-module2__stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(calc(100% - (var(--tawha-gutter) * 2)), var(--tawha-board));
+  margin-inline: auto;
+  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+  min-height: clamp(720px, 95vw, 1180px);
+}
+
+.tawha-module2__bg {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tawha-module2__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: clamp(1.5rem, 3.5vw, 2.75rem) clamp(1rem, 2.5vw, 2rem)
+    clamp(1.75rem, 4vw, 3rem);
+}
+
+.tawha-module2__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tawha-module2__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.15rem;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--tawha-ink);
+}
+
+.tawha-module2__title {
+  margin: 0.85rem 0 0;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.tawha-module2__callout {
+  width: min(100%, 40rem);
+  margin: clamp(1.25rem, 3vw, 2rem) auto 0;
+  padding: clamp(0.95rem, 2vw, 1.25rem) clamp(1.1rem, 2.4vw, 1.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: clamp(0.85rem, 1.6vw, 1.15rem);
+  background: rgba(6, 28, 18, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 10px 32px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px) saturate(1.1);
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+}
+
+.tawha-module2__callout-line {
+  margin: 0;
+  font-size: clamp(0.8rem, 1.15vw, 0.92rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tawha-module2__callout-line + .tawha-module2__callout-line {
+  margin-top: 0.75rem;
+}
+
+.tawha-module2__callout-label {
+  font-weight: 700;
+  color: #fff;
+}
+
+.tawha-module2__block {
+  margin-top: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.tawha-module2__block-title {
+  margin: 0 0 clamp(1rem, 2.5vw, 1.5rem);
+  text-align: center;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.tawha-module2__phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.55rem, 1.4vw, 1rem);
+}
+
+.tawha-module2__phone {
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.tawha-module2__phone-img {
+  display: block;
+  width: clamp(96px, 13.5vw, 168px);
+  height: auto;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.28));
+}
+
+@media (max-width: 900px) {
+  .tawha-module2__phone-img {
+    width: clamp(110px, 28vw, 160px);
+  }
+}
+
+@media (max-width: 640px) {
+  .tawha-module2__phones {
+    gap: 0.75rem;
+  }
+
+  .tawha-module2__phone-img {
+    width: min(42vw, 160px);
+  }
+}
+
+/* Module 3 — Collections */
+.tawha-module3 {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-module3__stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(calc(100% - (var(--tawha-gutter) * 2)), var(--tawha-board));
+  margin-inline: auto;
+  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+  min-height: clamp(560px, 72vw, 920px);
+}
+
+.tawha-module3__bg {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tawha-module3__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: clamp(1.5rem, 3.5vw, 2.75rem) clamp(1rem, 2.5vw, 2rem)
+    clamp(1.75rem, 4vw, 3rem);
+}
+
+.tawha-module3__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tawha-module3__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.15rem;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--tawha-ink);
+}
+
+.tawha-module3__title {
+  margin: 0.85rem 0 0;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.tawha-module3__callout {
+  width: min(100%, 40rem);
+  margin: clamp(1.25rem, 3vw, 2rem) auto 0;
+  padding: clamp(0.95rem, 2vw, 1.25rem) clamp(1.1rem, 2.4vw, 1.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: clamp(0.85rem, 1.6vw, 1.15rem);
+  background: rgba(6, 28, 18, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 10px 32px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px) saturate(1.1);
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+}
+
+.tawha-module3__callout-line {
+  margin: 0;
+  font-size: clamp(0.8rem, 1.15vw, 0.92rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tawha-module3__callout-line + .tawha-module3__callout-line {
+  margin-top: 0.75rem;
+}
+
+.tawha-module3__callout-label {
+  font-weight: 700;
+  color: #fff;
+}
+
+.tawha-module3__phones {
+  margin-top: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+.tawha-module3__phones-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.55rem, 1.4vw, 1rem);
+}
+
+.tawha-module3__phones-row + .tawha-module3__phones-row {
+  margin-top: clamp(0.55rem, 1.4vw, 1rem);
+}
+
+.tawha-module3__phone {
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.tawha-module3__phone-img {
+  display: block;
+  width: clamp(96px, 13.5vw, 168px);
+  height: auto;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.28));
+}
+
+@media (max-width: 900px) {
+  .tawha-module3__phone-img {
+    width: clamp(110px, 28vw, 160px);
+  }
+}
+
+@media (max-width: 640px) {
+  .tawha-module3__phones-row {
+    gap: 0.75rem;
+  }
+
+  .tawha-module3__phone-img {
+    width: min(42vw, 160px);
+  }
+}
+
+/* Module 4 — Reports */
+.tawha-module4 {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-module4__stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(calc(100% - (var(--tawha-gutter) * 2)), var(--tawha-board));
+  margin-inline: auto;
+  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+  min-height: clamp(560px, 72vw, 920px);
+}
+
+.tawha-module4__bg {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tawha-module4__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: clamp(1.5rem, 3.5vw, 2.75rem) clamp(1rem, 2.5vw, 2rem)
+    clamp(1.75rem, 4vw, 3rem);
+}
+
+.tawha-module4__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tawha-module4__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.15rem;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--tawha-ink);
+}
+
+.tawha-module4__title {
+  margin: 0.85rem 0 0;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.tawha-module4__callout {
+  width: min(100%, 40rem);
+  margin: clamp(1.25rem, 3vw, 2rem) auto 0;
+  padding: clamp(0.95rem, 2vw, 1.25rem) clamp(1.1rem, 2.4vw, 1.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: clamp(0.85rem, 1.6vw, 1.15rem);
+  background: rgba(6, 28, 18, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 10px 32px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px) saturate(1.1);
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+}
+
+.tawha-module4__callout-line {
+  margin: 0;
+  font-size: clamp(0.8rem, 1.15vw, 0.92rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tawha-module4__callout-line + .tawha-module4__callout-line {
+  margin-top: 0.75rem;
+}
+
+.tawha-module4__callout-label {
+  font-weight: 700;
+  color: #fff;
+}
+
+.tawha-module4__phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.55rem, 1.4vw, 1rem);
+  margin-top: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+.tawha-module4__phone {
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.tawha-module4__phone-img {
+  display: block;
+  width: clamp(96px, 13.5vw, 168px);
+  height: auto;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.28));
+}
+
+@media (max-width: 900px) {
+  .tawha-module4__phone-img {
+    width: clamp(110px, 28vw, 160px);
+  }
+}
+
+@media (max-width: 640px) {
+  .tawha-module4__phones {
+    gap: 0.75rem;
+  }
+
+  .tawha-module4__phone-img {
+    width: min(42vw, 160px);
+  }
+}
+
+/* Module 5 — User Management */
+.tawha-module5 {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(3rem, 7vw, 5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-module5__stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(calc(100% - (var(--tawha-gutter) * 2)), var(--tawha-board));
+  margin-inline: auto;
+  border-radius: clamp(1.25rem, 2.5vw, 2rem);
+  min-height: clamp(640px, 85vw, 1040px);
+}
+
+.tawha-module5__bg {
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.tawha-module5__panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: clamp(1.5rem, 3.5vw, 2.75rem) clamp(1rem, 2.5vw, 2rem)
+    clamp(1.75rem, 4vw, 3rem);
+}
+
+.tawha-module5__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tawha-module5__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.15rem;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--tawha-ink);
+}
+
+.tawha-module5__title {
+  margin: 0.85rem 0 0;
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.tawha-module5__callout {
+  width: min(100%, 42rem);
+  margin: clamp(1.25rem, 3vw, 2rem) auto 0;
+  padding: clamp(0.95rem, 2vw, 1.25rem) clamp(1.1rem, 2.4vw, 1.5rem);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: clamp(0.85rem, 1.6vw, 1.15rem);
+  background: rgba(6, 28, 18, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 10px 32px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(16px) saturate(1.1);
+  -webkit-backdrop-filter: blur(16px) saturate(1.1);
+}
+
+.tawha-module5__callout-line {
+  margin: 0;
+  font-size: clamp(0.8rem, 1.15vw, 0.92rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tawha-module5__callout-line + .tawha-module5__callout-line {
+  margin-top: 0.75rem;
+}
+
+.tawha-module5__callout-label {
+  font-weight: 700;
+  color: #fff;
+}
+
+.tawha-module5__phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(0.55rem, 1.4vw, 1rem);
+  margin-top: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+.tawha-module5__block {
+  margin-top: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.tawha-module5__block-title {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.tawha-module5__block .tawha-module5__phones {
+  margin-top: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.tawha-module5__phone {
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.tawha-module5__phone-img {
+  display: block;
+  width: clamp(96px, 13.5vw, 168px);
+  height: auto;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.28));
+}
+
+@media (max-width: 900px) {
+  .tawha-module5__phone-img {
+    width: clamp(110px, 28vw, 160px);
+  }
+}
+
+@media (max-width: 640px) {
+  .tawha-module5__phones {
+    gap: 0.75rem;
+  }
+
+  .tawha-module5__phone-img {
+    width: min(42vw, 160px);
+  }
+}
+
+/* Closing — Thank you */
+.tawha-closing {
+  padding: 0 0 clamp(4rem, 9vw, 6.5rem);
+  background: var(--tawha-mint);
+}
+
+.tawha-closing__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(4rem, 10vw, 7rem) clamp(1.25rem, 4vw, 3rem);
+}
+
+.tawha-closing__title {
+  margin: 0;
+  max-width: 28rem;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--tawha-ink);
+}
+
+.tawha-closing__body {
+  margin: clamp(1rem, 2.5vw, 1.5rem) 0 0;
+  max-width: 34rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.125rem);
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--tawha-ink);
+}
+
+.tawha-closing__emoji {
+  display: block;
+  margin-top: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  line-height: 1;
 }

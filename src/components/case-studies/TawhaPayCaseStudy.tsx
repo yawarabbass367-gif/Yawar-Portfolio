@@ -9,8 +9,18 @@ import { TawhaFeatureBand } from "./tawha/TawhaFeatureBand";
 import { TawhaDesignOpportunity } from "./tawha/TawhaDesignOpportunity";
 import { TawhaUserSegmentation } from "./tawha/TawhaUserSegmentation";
 import { TawhaWhoUses } from "./tawha/TawhaWhoUses";
-import { TawhaChallenge1 } from "./tawha/TawhaChallenge1";
-import { TawhaChallenge2 } from "./tawha/TawhaChallenge2";
+import { TawhaPersonalBenchmark } from "./tawha/TawhaPersonalBenchmark";
+import { TawhaBenchmarkFindings } from "./tawha/TawhaBenchmarkFindings";
+import { TawhaUxOpportunities } from "./tawha/TawhaUxOpportunities";
+import { TawhaBusinessBenchmark } from "./tawha/TawhaBusinessBenchmark";
+import { TawhaBusinessFindings } from "./tawha/TawhaBusinessFindings";
+import { TawhaBusinessUxOpportunities } from "./tawha/TawhaBusinessUxOpportunities";
+import { TawhaModule1Accounts } from "./tawha/TawhaModule1Accounts";
+import { TawhaModule2Payments } from "./tawha/TawhaModule2Payments";
+import { TawhaModule3Collections } from "./tawha/TawhaModule3Collections";
+import { TawhaModule4Reports } from "./tawha/TawhaModule4Reports";
+import { TawhaModule5Users } from "./tawha/TawhaModule5Users";
+import { TawhaClosing } from "./tawha/TawhaClosing";
 
 const tawhaFont = Poppins({
   subsets: ["latin"],
@@ -30,8 +40,18 @@ export function TawhaPayCaseStudy() {
       <TawhaDesignOpportunity />
       <TawhaUserSegmentation />
       <TawhaWhoUses />
-      <TawhaChallenge1 />
-      <TawhaChallenge2 />
+      <TawhaPersonalBenchmark />
+      <TawhaBenchmarkFindings />
+      <TawhaUxOpportunities />
+      <TawhaBusinessBenchmark />
+      <TawhaBusinessFindings />
+      <TawhaBusinessUxOpportunities />
+      <TawhaModule1Accounts />
+      <TawhaModule2Payments />
+      <TawhaModule3Collections />
+      <TawhaModule4Reports />
+      <TawhaModule5Users />
+      <TawhaClosing />
     </main>
   );
 }
