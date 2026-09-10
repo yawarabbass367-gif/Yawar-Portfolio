@@ -76,50 +76,56 @@ export const faqs = [
 ];
 
 export const aboutImages = {
-  portrait: "https://framerusercontent.com/images/sOV9oVng8G6eTcJz9mcCnJarYGE.jpg",
-  hiking: "https://framerusercontent.com/images/bItSXFPavhU2dit81jnbKTXR0JE.jpg",
-  coffee: "https://framerusercontent.com/images/mTIgomHRzjbLd0XLW5T7qOrhxU.jpg",
-  cat: "https://framerusercontent.com/images/W6EKuDKZ6ilw7quzpU9IfkL248E.jpg",
+  topLeft: "/about/about-top-left.png",
+  topRight: "/about/about-top-right.png",
+  bottomLeft: "/about/about-bottom-left.jpg",
+  bottomRight: "/about/about-bottom-right.jpg",
 };
 
 export const playgroundItems = [
   {
-    title: "Neon Dashboard",
-    image: "https://framerusercontent.com/images/btVfj3uYz35Jcg8udVCo6IDHPIw.jpg",
+    title: "Kuafi — Chic Latte Cache",
+    image: "/playground/01-kuafi-latte.jpg",
   },
   {
-    title: "Editorial Spread",
-    image: "https://framerusercontent.com/images/NUTdkRLYEoKo3q0xaYuGtoBUg.jpg",
+    title: "Kokoro — Brew & Bakery",
+    image: "/playground/02-kokoro-bakery.jpg",
   },
   {
-    title: "Mobile Wellness",
-    image: "https://framerusercontent.com/images/sOV9oVng8G6eTcJz9mcCnJarYGE.jpg",
+    title: "Visual Identity Poster",
+    image: "/playground/03-visual-identity.png",
   },
   {
-    title: "Hiring Flow",
-    image: "https://framerusercontent.com/images/5gmEX58ZB6E6bhMpCUhzutgd48.jpg",
+    title: "Plastic Awareness",
+    image: "/playground/04-plastic-poster.png",
   },
   {
-    title: "Marketplace UI",
-    image: "https://framerusercontent.com/images/GfQF9MJTOQgip3GZt7WYQlFA.png",
+    title: "Space Station Brand",
+    image: "/playground/05-space-station.jpg",
   },
   {
-    title: "Brand Marks",
-    image: "https://framerusercontent.com/images/SHIa3uWu2UD2oI3xk2CjDiAHAc.png",
+    title: "Bon Voyage",
+    image: "/playground/06-bon-voyage.jpg",
   },
   {
-    title: "Product Screens",
-    image: "https://framerusercontent.com/images/I2DGsvE6BPFKwR3seUVB72UVU.png",
+    title: "Enzyme — UI/UX",
+    image: "/playground/07-enzyme-ui.jpg",
   },
   {
-    title: "Visual System",
-    image: "https://framerusercontent.com/images/gn78wQvecZqzcGzRKWGkV3NuVE.png",
+    title: "Interface Experience",
+    image: "/playground/08-interface-experience.jpg",
   },
 ];
 
 export const contactLinks = [
-  { label: "Email", value: "hello@artemis.com", href: "mailto:hello@artemis.com" },
-  { label: "LinkedIn", value: "linkedin.com/artemis", href: "https://linkedin.com/" },
-  { label: "Website", value: "artemis1.framer.website", href: "https://artemis1.framer.website/" },
-  { label: "ARE.NA", value: "are.na/artemis", href: "https://are.na/" },
+  {
+    label: "Email",
+    value: "yawarabbas367@gmail.com",
+    href: "mailto:yawarabbas367@gmail.com",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/yawar-abbas-310543234",
+    href: "https://www.linkedin.com/in/yawar-abbas-310543234/",
+  },
 ];

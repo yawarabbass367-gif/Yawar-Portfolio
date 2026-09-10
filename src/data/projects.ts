@@ -21,22 +21,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "nayapay",
-    title: "Nayapay case study",
-    category: "Product Design",
-    summary:
-      "A simple way to manage all personal finances in one app — product design for a modern fintech experience.",
-    client: "Nayapay",
-    industry: "Fintech, Personal Finance",
-    timeline: "2024",
-    role: "Product Designer",
-    overview:
-      "Nayapay brings personal finance management into one clear mobile experience — balances, transfers, and transactions designed for everyday use.",
-    cover: "/case-studies/nayapay-thumbnail.png",
-    gallery: [],
-    accent: "#ff5900",
-  },
-  {
     slug: "tawhapay",
     title: "Tawhapay case study",
     category: "Product Design",
@@ -53,22 +37,6 @@ export const projects: Project[] = [
     accent: "#1a7a4c",
   },
   {
-    slug: "virtue",
-    title: "Virtue Digital Wellbeing App",
-    category: "UI & UX",
-    summary:
-      "A digital wellbeing experience that helps people manage screen time and build healthier phone habits.",
-    client: "Virtue",
-    industry: "Health & Wellness, Mobile",
-    timeline: "2024",
-    role: "Product Designer",
-    overview:
-      "Virtue is a digital wellbeing app focused on mindful phone use — login, habits, and controls designed for clarity and calm.",
-    cover: "/case-studies/virtue-thumbnail.png",
-    gallery: [],
-    accent: "#111111",
-  },
-  {
     slug: "medico",
     title: "Medico",
     category: "UI & UX",
@@ -83,6 +51,38 @@ export const projects: Project[] = [
     cover: "/case-studies/medico-thumbnail.jpg",
     gallery: [],
     accent: "#1a6dff",
+  },
+  {
+    slug: "nayapay",
+    title: "Nayapay case study",
+    category: "Product Design",
+    summary:
+      "A simple way to manage all personal finances in one app — product design for a modern fintech experience.",
+    client: "Nayapay",
+    industry: "Fintech, Personal Finance",
+    timeline: "2024",
+    role: "Product Designer",
+    overview:
+      "Nayapay brings personal finance management into one clear mobile experience — balances, transfers, and transactions designed for everyday use.",
+    cover: "/case-studies/nayapay-thumbnail.png",
+    gallery: [],
+    accent: "#ff5900",
+  },
+  {
+    slug: "virtue",
+    title: "Virtue Digital Wellbeing App",
+    category: "UI & UX",
+    summary:
+      "A digital wellbeing experience that helps people manage screen time and build healthier phone habits.",
+    client: "Virtue",
+    industry: "Health & Wellness, Mobile",
+    timeline: "2024",
+    role: "Product Designer",
+    overview:
+      "Virtue is a digital wellbeing app focused on mindful phone use — login, habits, and controls designed for clarity and calm.",
+    cover: "/case-studies/virtue-thumbnail.png",
+    gallery: [],
+    accent: "#111111",
   },
   {
     slug: "plum",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
   },
 ];
 
-export const homeProjects = projects.slice(0, 4);
+export const homeProjects = projects.slice(0, 5);
 
 export function getProject(slug: string) {
   return projects.find((p) => p.slug === slug);

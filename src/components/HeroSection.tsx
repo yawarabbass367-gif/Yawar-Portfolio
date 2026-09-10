@@ -10,39 +10,38 @@ type FloatingCard = {
   alt: string;
   className: string;
   delay: number;
-  src?: string;
-  custom?: "ableton";
+  src: string;
 };
 
 const floatingCards: FloatingCard[] = [
   {
     key: "field",
-    src: "/case-studies/photo-1723987513091-4cc24f8e5c71.avif",
-    alt: "Editorial portrait in a field",
+    src: "/hero/hero-float-top-left.jpg",
+    alt: "Spiral galaxy across a star field",
     className:
       "left-[3%] top-[17%] w-[148px] rotate-[17deg] sm:left-[5%] sm:w-[175px] md:left-[7%] md:top-[13%] md:w-[205px] lg:left-[10%] lg:w-[232px]",
     delay: 0.2,
   },
   {
     key: "cassie",
-    src: "/case-studies/photo-1671519821564-ced7e41ee7ae.jpeg",
-    alt: "Cassie and Henry poster",
+    src: "/hero/hero-float-top-right.jpg",
+    alt: "Bright star with cyan flare in deep space",
     className:
       "right-[2%] top-[15%] w-[138px] -rotate-[15deg] sm:right-[4%] sm:w-[168px] md:right-[6%] md:top-[11%] md:w-[198px] lg:right-[9%] lg:w-[226px]",
     delay: 0.3,
   },
   {
     key: "abstract",
-    src: "/case-studies/photo-1769123011272-197d95c2b71d.jpeg",
-    alt: "Colorful abstract landscape",
+    src: "/hero/hero-float-bottom-left.jpg",
+    alt: "The Kite Runner book cover",
     className:
       "bottom-[13%] left-[5%] w-[118px] -rotate-[11deg] sm:bottom-[15%] sm:left-[8%] sm:w-[140px] md:bottom-[17%] md:left-[11%] md:w-[158px] lg:left-[14%] lg:w-[172px]",
     delay: 0.4,
   },
   {
     key: "ableton",
-    custom: "ableton",
-    alt: "Ableton Springs and Summer",
+    src: "/hero/hero-float-bottom-right.jpg",
+    alt: "A Thousand Splendid Suns book cover",
     className:
       "bottom-[11%] right-[4%] w-[122px] rotate-[9deg] sm:bottom-[13%] sm:right-[7%] sm:w-[146px] md:bottom-[15%] md:right-[10%] md:w-[164px] lg:right-[13%] lg:w-[182px]",
     delay: 0.5,
@@ -50,25 +49,10 @@ const floatingCards: FloatingCard[] = [
 ];
 
 function CardFace({ card }: { card: FloatingCard }) {
-  if (card.custom === "ableton") {
-    return (
-      <div className="relative flex aspect-[4/5] w-full flex-col justify-between bg-[linear-gradient(165deg,#d7e8ff_0%,#eef4ff_42%,#f7f0d8_100%)] p-[12%]">
-        <p className="text-[clamp(0.95rem,1.6vw,1.35rem)] font-bold leading-tight text-[color:var(--color-navy)]">
-          Ableton
-          <br />
-          Springs &amp;
-          <br />
-          Summer
-        </p>
-        <div className="h-1.5 w-1.5 rounded-full bg-[color:var(--color-accent)]/70" />
-      </div>
-    );
-  }
-
   return (
     <div className="relative aspect-[4/5] w-full">
       <Image
-        src={card.src!}
+        src={card.src}
         alt={card.alt}
         fill
         priority

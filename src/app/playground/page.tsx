@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { playgroundItems } from "@/data/content";
 import { ContactSection } from "@/components/ContactSection";
@@ -67,14 +66,15 @@ export default function PlaygroundPage() {
           <h2 className="text-3xl font-medium tracking-tight md:text-5xl">
             Love what you see?
           </h2>
-          <p className="mt-4 text-[color:var(--color-stone)]">Let&apos;s connect!</p>
-          <Link
-            href="/#works"
+          <a
+            href="https://www.linkedin.com/in/yawar-abbas-310543234/"
+            target="_blank"
+            rel="noreferrer"
             data-cursor="Go"
             className="mt-8 inline-flex rounded-full bg-[color:var(--color-accent)] px-6 py-3 text-sm font-medium text-white"
           >
-            Start a project
-          </Link>
+            Let&apos;s connect
+          </a>
         </Reveal>
       </section>
       <ContactSection />

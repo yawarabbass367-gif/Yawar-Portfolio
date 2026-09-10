@@ -15,18 +15,17 @@ export function ContactSection() {
           </RevealItem>
           <RevealItem>
             <h2 className="max-w-3xl text-4xl font-medium tracking-tight md:text-6xl">
-              Ready to build something{" "}
-              <span className="text-emphasis text-[color:var(--color-sky)]">amazing?</span>
+              Leaving so soon?
             </h2>
           </RevealItem>
           <RevealItem>
-            <p className="mt-5 text-lg text-[color:var(--color-stone)]">
-              I&apos;d love to connect with you!
+            <p className="mt-5 max-w-xl text-lg text-[color:var(--color-stone)]">
+              No worries—let&apos;s build something next time you drop by.
             </p>
           </RevealItem>
         </RevealGroup>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid max-w-3xl gap-6 sm:grid-cols-2">
           {contactLinks.map((link, i) => (
             <Reveal key={link.label} delay={0.05 * i}>
               <a
@@ -39,35 +38,13 @@ export function ContactSection() {
                 <div className="text-xs uppercase tracking-[0.18em] text-[color:var(--color-stone)]">
                   {link.label}
                 </div>
-                <div className="mt-3 text-base transition group-hover:text-[color:var(--color-sky)]">
+                <div className="mt-3 break-all text-base transition group-hover:text-[color:var(--color-sky)]">
                   {link.value}
                 </div>
               </a>
             </Reveal>
           ))}
         </div>
-
-        <Reveal className="mt-16 flex flex-wrap items-center gap-4">
-          <a
-            href="https://framer.com/marketplace/templates/artemis/"
-            target="_blank"
-            rel="noreferrer"
-            data-cursor="Get"
-            className="inline-flex items-center gap-2 rounded-full bg-[color:var(--color-accent)] px-6 py-3 text-sm font-medium text-white transition hover:brightness-110"
-          >
-            Download this template
-            <span aria-hidden>→</span>
-          </a>
-          <a
-            href="https://www.framer.com"
-            target="_blank"
-            rel="noreferrer"
-            data-cursor="Open"
-            className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm text-[color:var(--color-bg)] transition hover:border-white/50"
-          >
-            Use For Free
-          </a>
-        </Reveal>
       </div>
     </section>
   );

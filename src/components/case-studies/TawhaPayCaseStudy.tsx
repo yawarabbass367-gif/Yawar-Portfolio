@@ -31,7 +31,7 @@ const tawhaFont = Poppins({
 /** Tawha Pay — native editable case study (Figma is design reference) */
 export function TawhaPayCaseStudy() {
   return (
-    <main className={`tawha-case overflow-x-clip pt-[88px] ${tawhaFont.className}`}>
+    <main className={`tawha-case overflow-x-clip pt-16 md:pt-[4.5rem] ${tawhaFont.className}`}>
       <TawhaHero />
       <TawhaIntro />
       <TawhaProblemDiscovery />

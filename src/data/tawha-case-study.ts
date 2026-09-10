@@ -13,11 +13,17 @@ export const tawhaBrand = {
 type Img = { src: string; width: number; height: number; alt: string };
 
 export const tawhaAssets = {
-  heroComposition: {
-    src: "/case-studies/tawha/assets/hero-composition.png",
-    width: 1905,
-    height: 1054,
-    alt: "Tawha Pay app dashboard on a phone held in hand, with TAWHAPAY wordmark",
+  heroWordmark: {
+    src: "/case-studies/tawha/assets/hero-tawhapay-wordmark.png",
+    width: 2400,
+    height: 259,
+    alt: "",
+  } satisfies Img,
+  heroPhoneHand: {
+    src: "/case-studies/tawha/assets/hero-phone-hand.png",
+    width: 863,
+    height: 1056,
+    alt: "Tawha Pay dashboard on a phone held in hand",
   } satisfies Img,
   notificationPhone: {
     src: "/case-studies/tawha/assets/notification-phone.png",

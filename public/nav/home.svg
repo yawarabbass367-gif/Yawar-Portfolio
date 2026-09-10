@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="black">
+  <path
+    fill-rule="evenodd"
+    d="M256 64 64 224v224h128V304h128v144h128V224L256 64ZM224 448V336h64v112h-64Z"
+  />
+</svg>
