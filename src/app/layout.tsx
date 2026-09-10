@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "Artemis — Modern Designer Portfolio",
   description:
     "Artemis is a refined portfolio for modern designers, artists, agencies, and studios. Clean editorial layout with smooth animations.",
+  icons: {
+    icon: [{ url: "/favicon.jpg", type: "image/jpeg" }],
+    apple: [{ url: "/favicon.jpg", type: "image/jpeg" }],
+    shortcut: "/favicon.jpg",
+  },
 };
 
 export default function RootLayout({
